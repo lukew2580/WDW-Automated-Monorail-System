@@ -1,170 +1,244 @@
 #!/usr/bin/env python3
 """
 WDW Monorail Fleet Management
-All 14 monorails: 12 active + 2 retired (post-2009 accident)
+All 12 current monorails + accurate 2009 accident history
 """
 
 import logging
 from enum import Enum
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import Dict, Optional, List
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)sZ %(levelname)s %(message)s")
 
 class MonorailLine(Enum):
+    """WDW Monorail Lines"""
     RESORT = "resort"
     EXPRESS = "express"
     EXPRESS_EPCOT = "express_epcot"
 
 @dataclass
 class Monorail:
-    name: str
+    """Represents a single monorail train"""
+    monorail_id: str
     color: str
-    hex_color: str
     train_number: int
     operational: bool
     line: Optional[MonorailLine] = None
-    status: str = "idle"
     position: float = 0.0
     speed: float = 0.0
+    status: str = "idle"
     
-    def get_display_name(self) -> str:
-        status_str = "🟢 ACTIVE" if self.operational else "🔴 RETIRED"
-        return f"{self.color} Train ({self.name}) - {status_str}"
-
 class MonorailFleet:
-    """Manages all 14 WDW monorails"""
+    """Manages the complete WDW monorail fleet"""
     
     def __init__(self):
-        self.monorails: dict = {}
+        self.monorails: Dict[str, Monorail] = {}
         self._initialize_fleet()
     
     def _initialize_fleet(self):
-        """Initialize all 12 active + 2 retired monorails"""
-        
-        # ACTIVE MONORAILS (12)
-        active_trains = [
-            Monorail("Red", "Red", "#FF0000", 1, True),
-            Monorail("Orange", "Orange", "#FFA500", 2, True),
-            Monorail("Yellow", "Yellow", "#FFFF00", 3, True),
-            Monorail("Green", "Green", "#00AA00", 4, True),
-            Monorail("Blue", "Blue", "#0000FF", 5, True),
-            Monorail("Purple", "Purple", "#800080", 6, True),
-            Monorail("Pink", "Pink", "#FF69B4", 7, True),
-            Monorail("Coral", "Coral", "#FF7F50", 8, True),
-            Monorail("Teal", "Teal", "#008080", 9, True),
-            Monorail("Silver", "Silver", "#C0C0C0", 10, True),
-            Monorail("Gold", "Gold", "#FFD700", 11, True),
-            Monorail("Lime", "Lime", "#00FF00", 12, True),
+        """Initialize all 12 current monorails"""
+        current_monorails = [
+            ("lime", "Lime", 1, True),
+            ("teal", "Teal", 2, True),  # Built from Pink & Purple wreckage (2009)
+            ("red", "Red", 3, True),
+            ("coral", "Coral", 4, True),
+            ("orange", "Orange", 5, True),
+            ("gold", "Gold", 6, True),
+            ("yellow", "Yellow", 7, True),
+            ("peach", "Peach", 8, True),  # Built with salvaged parts from crash
+            ("green", "Green", 9, True),
+            ("blue", "Blue", 10, True),
+            ("silver", "Silver", 11, True),
+            ("black", "Black", 12, True),
         ]
         
-        # RETIRED MONORAILS (2) - Post-2009 Accident
-        retired_trains = [
-            Monorail("White", "White (Retired)", "#FFFFFF", 13, False),  # Retired after 2009 accident
-            Monorail("Black", "Black (Retired)", "#000000", 14, False),  # Retired after 2009 accident
-        ]
+        for monorail_id, color, train_num, operational in current_monorails:
+            self.monorails[monorail_id] = Monorail(
+                monorail_id=monorail_id,
+                color=color,
+                train_number=train_num,
+                operational=operational,
+                line=None
+            )
         
-        # Register all trains
-        for train in active_trains + retired_trains:
-            self.monorails[f"monorail-{train.train_number}"] = train
+        logging.info(f"Fleet initialized with {len(self.monorails)} operational monorails")
     
-    def get_fleet(self) -> dict:
+    def get_fleet(self) -> Dict[str, Monorail]:
         """Get all monorails"""
         return self.monorails
     
-    def get_active_fleet(self) -> dict:
-        """Get only active monorails (12)"""
-        return {k: v for k, v in self.monorails.items() if v.operational}
-    
-    def get_retired_fleet(self) -> dict:
-        """Get retired monorails (2)"""
-        return {k: v for k, v in self.monorails.items() if not v.operational}
-    
     def get_monorail(self, monorail_id: str) -> Optional[Monorail]:
-        """Get specific monorail by ID"""
+        """Get specific monorail"""
         return self.monorails.get(monorail_id)
     
-    def get_monorails_by_line(self, line: MonorailLine) -> dict:
+    def get_monorails_by_line(self, line: MonorailLine) -> Dict[str, Monorail]:
         """Get all monorails assigned to a specific line"""
-        return {k: v for k, v in self.monorails.items() 
-                if v.operational and v.line == line}
+        return {
+            mid: m for mid, m in self.monorails.items() 
+            if m.line == line and m.operational
+        }
     
     def assign_to_line(self, monorail_id: str, line: MonorailLine) -> bool:
-        """Assign monorail to a line"""
-        train = self.get_monorail(monorail_id)
-        if train and train.operational:
-            train.line = line
-            logging.info(f"[{train.color}] Assigned to {line.value} line")
-            return True
-        elif train and not train.operational:
-            logging.error(f"[{train.color}] Cannot assign retired train to line")
+        """Assign a monorail to a line"""
+        if monorail_id not in self.monorails:
+            logging.error(f"Monorail {monorail_id} not found")
             return False
-        return False
+        
+        train = self.monorails[monorail_id]
+        if not train.operational:
+            logging.error(f"Monorail {monorail_id} is not operational")
+            return False
+        
+        train.line = line
+        logging.info(f"Assigned {train.color} to {line.value} line")
+        return True
     
-    def get_fleet_summary(self) -> dict:
-        """Get fleet summary statistics"""
-        active = self.get_active_fleet()
-        retired = self.get_retired_fleet()
-        
-        lines = {
-            "resort": len(self.get_monorails_by_line(MonorailLine.RESORT)),
-            "express": len(self.get_monorails_by_line(MonorailLine.EXPRESS)),
-            "express_epcot": len(self.get_monorails_by_line(MonorailLine.EXPRESS_EPCOT)),
-        }
-        
+    def get_fleet_summary(self) -> Dict:
+        """Get fleet summary with accident history"""
         return {
             "total_fleet": len(self.monorails),
-            "active_count": len(active),
-            "retired_count": len(retired),
-            "retired_year": 2009,
-            "retired_reason": "Monorail accident",
-            "monorails_by_line": lines,
-            "active_monorails": [f"{v.color} (Train {v.train_number})" for v in active.values()],
-            "retired_monorails": [f"{v.color} (Train {v.train_number})" for v in retired.values()],
+            "operational_count": len(self.monorails),
+            "current_monorails": [m.color for m in self.monorails.values()],
+            "accident_date": "June 1, 2009",
+            "accident_note": "Monorail Purple was involved in a collision with Monorail Pink. The pilot of Purple was fatally injured. Both trains were destroyed but their salvageable components were used to construct Teal and Peach.",
+            "2009_accident_history": {
+                "description": "Monorail crash on June 1, 2009",
+                "retired_trains": {
+                    "Pink": {
+                        "train_number": 13,
+                        "fate": "Destroyed - Pink & Purple wreckage used to build Teal",
+                        "salvage": "Components salvaged for Teal"
+                    },
+                    "Purple": {
+                        "train_number": 14,
+                        "fate": "Destroyed - pilot tragically killed",
+                        "salvage": "Components salvaged for Teal"
+                    }
+                },
+                "rebuilt_from_accident": {
+                    "Teal": {
+                        "train_number": 2,
+                        "built_from": "Undamaged sections of Pink and Purple",
+                        "operational_since": 2010
+                    },
+                    "Peach": {
+                        "train_number": 8,
+                        "built_from": "New components + salvaged pieces from crashed trains",
+                        "operational_since": 2011
+                    }
+                }
+            }
         }
     
-    def display_fleet(self):
-        """Display all monorails"""
-        logging.info("=" * 70)
-        logging.info("WDW MONORAIL FLEET - ALL 14 TRAINS")
-        logging.info("=" * 70)
+    def get_monorail_history(self, monorail_id: str) -> Dict:
+        """Get history for specific monorail"""
+        train = self.monorails.get(monorail_id)
+        if not train:
+            return {"error": "Monorail not found"}
         
-        logging.info("\n🟢 ACTIVE MONORAILS (12):")
-        logging.info("-" * 70)
-        for train_id, train in self.get_active_fleet().items():
-            line_str = f"Line: {train.line.value}" if train.line else "Unassigned"
-            logging.info(f"  {train.get_display_name()} | {line_str}")
+        history_map = {
+            "teal": {
+                "color": "Teal",
+                "status": "Operational",
+                "history": "Built from salvaged undamaged sections of Pink and Purple after 2009 accident",
+                "operational_since": 2010
+            },
+            "peach": {
+                "color": "Peach",
+                "status": "Operational",
+                "history": "Built with new components and salvaged pieces from Pink and Purple",
+                "operational_since": 2011
+            },
+            "lime": {
+                "color": "Lime",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "red": {
+                "color": "Red",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "coral": {
+                "color": "Coral",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "orange": {
+                "color": "Orange",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "gold": {
+                "color": "Gold",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "yellow": {
+                "color": "Yellow",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "green": {
+                "color": "Green",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "blue": {
+                "color": "Blue",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "silver": {
+                "color": "Silver",
+                "status": "Operational",
+                "history": "Original fleet member"
+            },
+            "black": {
+                "color": "Black",
+                "status": "Operational",
+                "history": "Original fleet member"
+            }
+        }
         
-        logging.info("\n🔴 RETIRED MONORAILS (2) - Post-2009 Accident:")
-        logging.info("-" * 70)
-        for train_id, train in self.get_retired_fleet().items():
-            logging.info(f"  {train.get_display_name()} | Train #{train.train_number}")
-        
-        logging.info("\n" + "=" * 70)
-        summary = self.get_fleet_summary()
-        logging.info(f"Total Fleet: {summary['total_fleet']} trains")
-        logging.info(f"  • Active: {summary['active_count']}")
-        logging.info(f"  • Retired: {summary['retired_count']} (since {summary['retired_year']})")
-        logging.info("=" * 70 + "\n")
+        return history_map.get(monorail_id, {"error": "History not found"})
 
 async def demo_fleet():
-    """Demo fleet management"""
+    """Demo the complete fleet"""
     fleet = MonorailFleet()
-    fleet.display_fleet()
     
-    # Assign some to lines
-    fleet.assign_to_line("monorail-1", MonorailLine.RESORT)
-    fleet.assign_to_line("monorail-2", MonorailLine.EXPRESS)
-    fleet.assign_to_line("monorail-3", MonorailLine.EXPRESS_EPCOT)
+    logging.info("=" * 70)
+    logging.info("WDW MONORAIL FLEET - COMPLETE & ACCURATE")
+    logging.info("=" * 70)
     
-    logging.info("\n📊 Fleet Summary:")
+    logging.info("\n🚂 CURRENT OPERATIONAL FLEET (12 Monorails):")
+    for monorail_id, train in fleet.get_fleet().items():
+        logging.info(f"   • {train.color} (Train {train.train_number})")
+    
+    logging.info("\n📜 2009 ACCIDENT HISTORY:")
     summary = fleet.get_fleet_summary()
-    for key, value in summary.items():
-        logging.info(f"  {key}: {value}")
+    accident = summary["2009_accident_history"]
+    logging.info(f"   {accident['description']}")
+    logging.info(f"   {summary['accident_note']}")
     
-    logging.info("\n✅ Fleet management demo complete!")
+    logging.info("\n🔴 RETIRED TRAINS (Destroyed in 2009):")
+    for name, details in accident["retired_trains"].items():
+        logging.info(f"   • {name} (Train {details['train_number']})")
+        logging.info(f"     → {details['fate']}")
+    
+    logging.info("\n🟢 REBUILT FROM ACCIDENT SALVAGE:")
+    for name, details in accident["rebuilt_from_accident"].items():
+        logging.info(f"   • {name} (Train {details['train_number']})")
+        logging.info(f"     → Built from: {details['built_from']}")
+        logging.info(f"     → Operational since: {details['operational_since']}")
+    
+    logging.info("\n" + "=" * 70)
+    logging.info("✅ Fleet management demo complete!")
+    logging.info("=" * 70)
 
 if __name__ == "__main__":
     import asyncio
     asyncio.run(demo_fleet())
+
 
