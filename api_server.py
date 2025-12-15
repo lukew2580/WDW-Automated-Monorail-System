@@ -11,11 +11,15 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import asyncio
 from datetime import datetime
-from line_management import MonorailLine, MonorailLineTracker
+from monorail_fleet import MonorailFleet, MonorailLine
+from line_management import MonorailLineTracker
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)sZ %(levelname)s %(message)s")
 
 app = FastAPI(title="WDW Monorail API", version="2.0")
+
+# Initialize fleet with all 14 monorails
+fleet = MonorailFleet()
 
 # Monorail trackers by ID
 monorail_trackers = {}
@@ -45,6 +49,105 @@ async def health():
     return {"status": "healthy", "timestamp": datetime.now().isoformat()}
 
 # LINE MANAGEMENT ENDPOINTS
+
+@app.get("/fleet")
+async def get_fleet():
+    """Get all 14 monorails"""
+    result = {}
+    for monorail_id, train in fleet.get_fleet().items():
+        result[monorail_id] = {
+            "name": train.color,
+            "train_number": train.train_number,
+            "operational": train.operational,
+            "line": train.line.value if train.line else None,
+            "status": train.status
+        }
+    return result
+
+@app.get("/fleet/active")
+async def get_active_fleet():
+    """Get only active monorails (12)"""
+    result = {}
+    for monorail_id, train in fleet.get_active_fleet().items():
+        result[monorail_id] = {
+            "name": train.color,
+            "train_number": train.train_number,
+            "operational": True,
+            "line": train.line.value if train.line else None
+        }
+    return result
+
+@app.get("/fleet/retired")
+async def get_retired_fleet():
+    """Get retired monorails (2) - Post-2009 accident"""
+    result = {}
+    for monorail_id, train in fleet.get_retired_fleet().items():
+        result[monorail_id] = {
+            "name": train.color,
+            "train_number": train.train_number,
+            "operational": False,
+            "retired_year": 2009,
+            "retired_reason": "Monorail accident"
+        }
+    return result
+
+@app.get("/fleet/summary")
+async def get_fleet_summary():
+    """Get fleet summary statistics"""
+    return fleet.get_fleet_summary()
+
+@app.get("/fleet/by-line/{line_id}")
+async def get_fleet_by_line(line_id: str):
+    """Get all active monorails assigned to a specific line"""
+    try:
+        line = MonorailLine(line_id)
+        result = {}
+        for monorail_id, train in fleet.get_monorails_by_line(line).items():
+            result[monorail_id] = {
+                "name": train.color,
+                "train_number": train.train_number,
+                "line": train.line.value if train.line else None
+            }
+        return result
+    except ValueError:
+        raise HTTPException(status_code=400, detail=f"Invalid line: {line_id}")
+
+@app.post("/monorail/{monorail_id}/assign-line")
+async def assign_monorail_to_line(monorail_id: str, line: str):
+    """Assign a monorail to a line"""
+    try:
+        line_enum = MonorailLine(line)
+        success = fleet.assign_to_line(monorail_id, line_enum)
+        if success:
+            train = fleet.get_monorail(monorail_id)
+            return {
+                "monorail_id": monorail_id,
+                "color": train.color,
+                "train_number": train.train_number,
+                "line": line,
+                "status": "assigned"
+            }
+        else:
+            raise HTTPException(status_code=400, detail=f"Cannot assign {monorail_id} to line")
+    except ValueError:
+        raise HTTPException(status_code=400, detail=f"Invalid line: {line}")
+
+@app.get("/monorail/{monorail_id}")
+async def get_monorail(monorail_id: str):
+    """Get specific monorail details"""
+    train = fleet.get_monorail(monorail_id)
+    if not train:
+        raise HTTPException(status_code=404, detail="Monorail not found")
+    return {
+        "monorail_id": monorail_id,
+        "name": train.color,
+        "train_number": train.train_number,
+        "operational": train.operational,
+        "line": train.line.value if train.line else None,
+        "status": train.status,
+        "position": train.position,
+        "speed": train.speed
+    }
 
 @app.post("/monorail/{monorail_id}/assign-line")
 async def assign_monorail_line(monorail_id: str, line: str):
@@ -183,5 +286,6 @@ async def websocket_endpoint(websocket: WebSocket):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8002)
+
 
 
