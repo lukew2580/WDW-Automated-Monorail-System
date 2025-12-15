@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 WDW Monorail API Server
-REST API for monorail control & monitoring
+REST API for monorail control & monitoring with line awareness
 """
 
 import json
@@ -11,10 +11,14 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import asyncio
 from datetime import datetime
+from line_management import MonorailLine, MonorailLineTracker
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)sZ %(levelname)s %(message)s")
 
-app = FastAPI(title="WDW Monorail API", version="1.0")
+app = FastAPI(title="WDW Monorail API", version="2.0")
+
+# Monorail trackers by ID
+monorail_trackers = {}
 
 # Simulated monorail state
 monorail_state = {
@@ -25,6 +29,8 @@ monorail_state = {
     "position": 0,
     "passengers": 0,
     "is_running": False,
+    "line": None,
+    "line_name": None,
     "route": [
         "magic_kingdom",
         "epcot", 
@@ -37,6 +43,82 @@ monorail_state = {
 @app.get("/health")
 async def health():
     return {"status": "healthy", "timestamp": datetime.now().isoformat()}
+
+# LINE MANAGEMENT ENDPOINTS
+
+@app.post("/monorail/{monorail_id}/assign-line")
+async def assign_monorail_line(monorail_id: str, line: str):
+    """Assign a monorail to a specific WDW line"""
+    try:
+        line_enum = MonorailLine[line.upper().replace("-", "_")]
+    except KeyError:
+        raise HTTPException(status_code=400, detail=f"Invalid line: {line}")
+    
+    if monorail_id not in monorail_trackers:
+        monorail_trackers[monorail_id] = MonorailLineTracker(monorail_id)
+    
+    tracker = monorail_trackers[monorail_id]
+    success = await tracker.set_line(line_enum)
+    
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to assign line")
+    
+    return {
+        "monorail_id": monorail_id,
+        "line": line_enum.value,
+        "status": "assigned",
+        "line_info": tracker.get_line_status()
+    }
+
+@app.get("/monorail/{monorail_id}/line-status")
+async def get_line_status(monorail_id: str):
+    """Get the current line and route information for a monorail"""
+    if monorail_id not in monorail_trackers:
+        raise HTTPException(status_code=404, detail=f"Monorail {monorail_id} not found")
+    
+    tracker = monorail_trackers[monorail_id]
+    return tracker.get_line_status()
+
+@app.get("/lines")
+async def get_all_lines():
+    """Get information about all WDW monorail lines"""
+    from line_management import LineManager
+    
+    manager = LineManager()
+    lines_info = {}
+    
+    for line in MonorailLine:
+        route = manager.get_line_info(line)
+        lines_info[line.value] = {
+            "name": route.name,
+            "color": route.color,
+            "total_distance": route.total_distance,
+            "description": route.description,
+            "stations": [s.value for s in route.stations]
+        }
+    
+    return lines_info
+
+@app.get("/lines/{line_id}")
+async def get_line_info(line_id: str):
+    """Get detailed information about a specific line"""
+    try:
+        line_enum = MonorailLine[line_id.upper().replace("-", "_")]
+    except KeyError:
+        raise HTTPException(status_code=404, detail=f"Line not found: {line_id}")
+    
+    from line_management import LineManager
+    manager = LineManager()
+    route = manager.get_line_info(line_enum)
+    
+    return {
+        "line_id": line_enum.value,
+        "name": route.name,
+        "color": route.color,
+        "total_distance": route.total_distance,
+        "description": route.description,
+        "stations": [s.value for s in route.stations]
+    }
 
 @app.get("/monorail/status")
 async def get_status():
@@ -101,4 +183,5 @@ async def websocket_endpoint(websocket: WebSocket):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8002)
+
 
