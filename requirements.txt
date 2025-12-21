@@ -11,6 +11,11 @@ aiohttp==3.9.5
 joblib==1.4.2
 python-dotenv==1.0.1
 cryptography==42.0.5
+psutil==6.0.0
+RPi.GPIO==0.7.1
+adafruit-circuitpython-neopixel==8.0.0
+adafruit-circuitpython-rgb-display==1.0.0
+
 
 
 
