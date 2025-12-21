@@ -452,16 +452,18 @@ Pre-configured UUIDs for monorail BLE hardware:
 
 ```
 🔴 Red (Train 1)        🟠 Orange (Train 2)     🟡 Yellow (Train 3)
-🟢 Green (Train 4)      🔵 Blue (Train 5)       🟣 Purple (Train 6)
-🩷 Pink (Train 7)       🌀 Coral (Train 8)      🔵 Teal (Train 9)*
+🟢 Green (Train 4)      🔵 Blue (Train 5)       🟣 Purple (Train 6) - Retired in 2009
+🩷 Pink (Train 7) - Retired in 2009       🌀 Coral (Train 8)      🔵 Teal (Train 9) - Built from undamaged parts of Pink and Purple
 ⚪ Silver (Train 10)    🟨 Gold (Train 11)      🟩 Lime (Train 12)
-
-*Rebuilt from 2009 accident salvage
-
-Historic (Retired):
-⚪ White (Train 13) - Retired post-2009 accident
-⬛ Black (Train 14) - Retired post-2009 accident
+🟫 Peach (Train 13) - Added in 2011 to restore fleet to 12 operational monorails
+⬛ Black (Train 14) - Retired in 2009, returned to service in 2022
 ```
+
+### Fleet History
+- **Retired Colors**: Pink and Purple were retired following the 2009 accident. Their undamaged parts were used to rebuild Teal.
+- **Peach**: Added in 2011 to restore the fleet to 12 operational monorails.
+- **Black**: Retired in 2009, refurbished and returned to service in 2022.
+- **Teal**: Built from the undamaged parts of the retired Pink and Purple monorails after the 2009 accident.
 
 ---
 
@@ -768,5 +770,7 @@ For support with the new features:
 ---
 
 **Enjoy the enhanced WDW Automated Monorail System with advanced features!** 🚂💡
+
+
 
 
