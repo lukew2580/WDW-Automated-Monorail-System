@@ -14,12 +14,29 @@ from datetime import datetime
 from monorail_fleet import MonorailFleet, MonorailLine
 from line_management import MonorailLineTracker
 
+# Import new feature modules
+try:
+    from predictive_maintenance import PredictiveMaintenanceSystem, MaintenanceRecord
+    from passenger_flow import PassengerFlowOptimizationSystem, PassengerData
+    from energy_management import EnergyManagementSystem, EnergyConsumptionRecord
+    from weather_adaptation import WeatherAdaptationSystem
+    NEW_FEATURES_AVAILABLE = True
+except ImportError as e:
+    logging.warning(f"New features not available: {e}")
+    NEW_FEATURES_AVAILABLE = False
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)sZ %(levelname)s %(message)s")
 
 app = FastAPI(title="WDW Monorail API", version="2.0")
 
 # Initialize fleet with all 14 monorails
 fleet = MonorailFleet()
+
+# Initialize new feature systems
+predictive_maintenance = PredictiveMaintenanceSystem() if NEW_FEATURES_AVAILABLE else None
+passenger_flow = PassengerFlowOptimizationSystem() if NEW_FEATURES_AVAILABLE else None
+energy_management = EnergyManagementSystem() if NEW_FEATURES_AVAILABLE else None
+weather_adaptation = WeatherAdaptationSystem() if NEW_FEATURES_AVAILABLE else None
 
 # Monorail trackers by ID
 monorail_trackers = {}
@@ -272,13 +289,281 @@ async def get_route():
     """Get full monorail route"""
     return {"route": monorail_state["route"]}
 
+# NEW FEATURE ENDPOINTS
+
+@app.get("/maintenance/predictive")
+async def get_predictive_maintenance():
+    """Get predictive maintenance status for all monorails"""
+    if not NEW_FEATURES_AVAILABLE or not predictive_maintenance:
+        raise HTTPException(status_code=503, detail="Predictive maintenance feature not available")
+    
+    results = {}
+    for monorail_id in fleet.get_active_fleet().keys():
+        prediction = predictive_maintenance.predict_maintenance(monorail_id)
+        results[monorail_id] = prediction
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "predictions": results
+    }
+
+@app.get("/maintenance/predictive/{monorail_id}")
+async def get_monorail_maintenance_prediction(monorail_id: str):
+    """Get predictive maintenance status for a specific monorail"""
+    if not NEW_FEATURES_AVAILABLE or not predictive_maintenance:
+        raise HTTPException(status_code=503, detail="Predictive maintenance feature not available")
+    
+    prediction = predictive_maintenance.predict_maintenance(monorail_id)
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "monorail_id": monorail_id,
+        "prediction": prediction
+    }
+
+@app.get("/maintenance/history/{monorail_id}")
+async def get_maintenance_history(monorail_id: str):
+    """Get maintenance history for a monorail"""
+    if not NEW_FEATURES_AVAILABLE or not predictive_maintenance:
+        raise HTTPException(status_code=503, detail="Predictive maintenance feature not available")
+    
+    history = predictive_maintenance.get_maintenance_history(monorail_id)
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "monorail_id": monorail_id,
+        "maintenance_history": [record.to_dict() for record in history]
+    }
+
+@app.post("/maintenance/record")
+async def add_maintenance_record(record: Dict):
+    """Add a new maintenance record"""
+    if not NEW_FEATURES_AVAILABLE or not predictive_maintenance:
+        raise HTTPException(status_code=503, detail="Predictive maintenance feature not available")
+    
+    try:
+        maintenance_record = MaintenanceRecord(
+            monorail_id=record["monorail_id"],
+            maintenance_type=record["maintenance_type"],
+            date=datetime.fromisoformat(record["date"]),
+            component=record["component"],
+            severity=record["severity"],
+            description=record["description"],
+            parts_replaced=record.get("parts_replaced", [])
+        )
+        
+        predictive_maintenance.add_maintenance_record(maintenance_record)
+        return {
+            "status": "success",
+            "message": "Maintenance record added",
+            "record_id": f"{record['monorail_id']}_{datetime.now().timestamp()}"
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Invalid record data: {str(e)}")
+
+@app.get("/passenger/flow")
+async def get_passenger_flow():
+    """Get current passenger flow analysis"""
+    if not NEW_FEATURES_AVAILABLE or not passenger_flow:
+        raise HTTPException(status_code=503, detail="Passenger flow feature not available")
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "crowding_status": passenger_flow.get_current_crowding(),
+        "optimization_recommendations": passenger_flow.get_optimization_recommendations()
+    }
+
+@app.get("/passenger/stations")
+async def get_passenger_data_by_station():
+    """Get passenger data for all stations"""
+    if not NEW_FEATURES_AVAILABLE or not passenger_flow:
+        raise HTTPException(status_code=503, detail="Passenger flow feature not available")
+    
+    stations_data = {}
+    for station in passenger_flow.analyzer.stations:
+        data = passenger_flow.analyzer.get_passenger_counts_by_station(station)
+        stations_data[station] = [d.to_dict() for d in data]
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "stations": stations_data
+    }
+
+@app.post("/passenger/data")
+async def add_passenger_data(data: Dict):
+    """Add passenger count data"""
+    if not NEW_FEATURES_AVAILABLE or not passenger_flow:
+        raise HTTPException(status_code=503, detail="Passenger flow feature not available")
+    
+    try:
+        passenger_data = PassengerData(
+            station=data["station"],
+            timestamp=datetime.fromisoformat(data["timestamp"]),
+            passengers_in=data["passengers_in"],
+            passengers_out=data["passengers_out"]
+        )
+        
+        passenger_flow.add_real_time_data(
+            passenger_data.station,
+            passenger_data.passengers_in,
+            passenger_data.passengers_out
+        )
+        
+        return {
+            "status": "success",
+            "message": "Passenger data added"
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Invalid passenger data: {str(e)}")
+
+@app.get("/energy/status")
+async def get_energy_status():
+    """Get current energy management status"""
+    if not NEW_FEATURES_AVAILABLE or not energy_management:
+        raise HTTPException(status_code=503, detail="Energy management feature not available")
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "energy_data": energy_management.get_energy_dashboard_data()
+    }
+
+@app.post("/energy/data")
+async def add_energy_data(data: Dict):
+    """Add energy consumption data"""
+    if not NEW_FEATURES_AVAILABLE or not energy_management:
+        raise HTTPException(status_code=503, detail="Energy management feature not available")
+    
+    try:
+        energy_record = energy_management.add_energy_data(
+            monorail_id=data["monorail_id"],
+            power_consumption=data["power_consumption"],
+            speed=data["speed"],
+            passengers=data["passengers"],
+            line=data["line"]
+        )
+        
+        return {
+            "status": "success",
+            "message": "Energy data added",
+            "record": energy_record.to_dict()
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Invalid energy data: {str(e)}")
+
+@app.get("/energy/report")
+async def get_energy_report(days: int = 7):
+    """Get energy savings report"""
+    if not NEW_FEATURES_AVAILABLE or not energy_management:
+        raise HTTPException(status_code=503, detail="Energy management feature not available")
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "report": energy_management.get_energy_savings_report(days)
+    }
+
+@app.get("/weather/current")
+async def get_current_weather():
+    """Get current weather and adaptation status"""
+    if not NEW_FEATURES_AVAILABLE or not weather_adaptation:
+        raise HTTPException(status_code=503, detail="Weather adaptation feature not available")
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "weather_adaptation": weather_adaptation.get_current_weather_adaptation()
+    }
+
+@app.get("/weather/forecast")
+async def get_weather_forecast(hours: int = 6):
+    """Get weather forecast impact analysis"""
+    if not NEW_FEATURES_AVAILABLE or not weather_adaptation:
+        raise HTTPException(status_code=503, detail="Weather adaptation feature not available")
+    
+    return {
+        "status": "success",
+        "timestamp": datetime.now().isoformat(),
+        "forecast": weather_adaptation.get_weather_forecast_impact(hours)
+    }
+
+@app.get("/system/health")
+async def get_system_health():
+    """Get overall system health including all subsystems"""
+    health_status = {
+        "timestamp": datetime.now().isoformat(),
+        "subsystems": {
+            "fleet_management": {
+                "status": "operational",
+                "active_trains": len(fleet.get_active_fleet()),
+                "retired_trains": len(fleet.get_retired_fleet())
+            },
+            "predictive_maintenance": {
+                "status": "operational" if NEW_FEATURES_AVAILABLE and predictive_maintenance else "unavailable",
+                "monorails_monitored": len(predictive_maintenance.health_monitors) if predictive_maintenance else 0
+            },
+            "passenger_flow": {
+                "status": "operational" if NEW_FEATURES_AVAILABLE and passenger_flow else "unavailable",
+                "stations_monitored": len(passenger_flow.analyzer.stations) if passenger_flow else 0
+            },
+            "energy_management": {
+                "status": "operational" if NEW_FEATURES_AVAILABLE and energy_management else "unavailable",
+                "monorails_monitored": len(energy_management.monitor.real_time_data) if energy_management else 0
+            },
+            "weather_adaptation": {
+                "status": "operational" if NEW_FEATURES_AVAILABLE and weather_adaptation else "unavailable",
+                "current_weather": weather_adaptation.weather_adapter.current_weather.to_dict() if weather_adaptation and weather_adaptation.weather_adapter.current_weather else None
+            }
+        }
+    }
+    
+    # Calculate overall status
+    operational_count = sum(1 for sub in health_status["subsystems"].values() if sub["status"] == "operational")
+    total_subsystems = len(health_status["subsystems"])
+    
+    if operational_count == total_subsystems:
+        health_status["overall_status"] = "fully_operational"
+    elif operational_count >= total_subsystems * 0.75:
+        health_status["overall_status"] = "partially_operational"
+    else:
+        health_status["overall_status"] = "degraded"
+    
+    return {
+        "status": "success",
+        "health": health_status
+    }
+
 @app.websocket("/ws/monorail")
 async def websocket_endpoint(websocket: WebSocket):
     """WebSocket for real-time updates"""
     await websocket.accept()
     try:
         while True:
-            await websocket.send_json(monorail_state)
+            # Enhanced state with new feature data
+            enhanced_state = monorail_state.copy()
+            
+            if NEW_FEATURES_AVAILABLE:
+                enhanced_state["predictive_maintenance"] = {
+                    "status": "available",
+                    "last_update": datetime.now().isoformat()
+                }
+                enhanced_state["passenger_flow"] = {
+                    "status": "available",
+                    "last_update": datetime.now().isoformat()
+                }
+                enhanced_state["energy_management"] = {
+                    "status": "available",
+                    "last_update": datetime.now().isoformat()
+                }
+                enhanced_state["weather_adaptation"] = {
+                    "status": "available",
+                    "last_update": datetime.now().isoformat()
+                }
+            
+            await websocket.send_json(enhanced_state)
             await asyncio.sleep(1)
     except:
         pass
@@ -286,6 +571,7 @@ async def websocket_endpoint(websocket: WebSocket):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8002)
+
 
 
 

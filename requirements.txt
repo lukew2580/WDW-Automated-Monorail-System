@@ -3,4 +3,12 @@ uvicorn==0.30.0
 bleak==0.21.1
 pydantic==2.5.0
 aiofiles==23.2.1
+scikit-learn==1.5.0
+pandas==2.2.2
+numpy==1.26.4
+requests==2.32.3
+aiohttp==3.9.5
+joblib==1.4.2
+python-dotenv==1.0.1
+
 
