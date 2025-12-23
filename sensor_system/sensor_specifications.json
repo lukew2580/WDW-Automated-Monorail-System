@@ -1,0 +1,198 @@
+{
+  "onboard": {
+    "A": {
+      "name": "Front Proximity Detection",
+      "type": "ToF LiDAR + Ultrasonic",
+      "range": "0.1m - 5m",
+      "frequency": "40Hz",
+      "location": "Front nose of monorail",
+      "purpose": "Collision avoidance, obstacle detection",
+      "data_fields": [
+        "distance_ahead",
+        "obstacle_detected",
+        "relative_velocity"
+      ]
+    },
+    "B": {
+      "name": "Rear Proximity Detection",
+      "type": "Ultrasonic + IR",
+      "range": "0.1m - 3m",
+      "frequency": "20Hz",
+      "location": "Rear end of monorail",
+      "purpose": "Rear obstacle detection, tail clearance",
+      "data_fields": [
+        "distance_behind",
+        "rear_obstacle",
+        "trailing_monorail_id"
+      ]
+    },
+    "C": {
+      "name": "Side Collision Sensors",
+      "type": "Pressure + Proximity",
+      "range": "0.05m - 2m",
+      "frequency": "30Hz",
+      "location": "Both sides along body",
+      "purpose": "Adjacent monorail detection, lateral clearance",
+      "data_fields": [
+        "left_distance",
+        "right_distance",
+        "contact_detected",
+        "adjacent_monorail_id"
+      ]
+    },
+    "C1": {
+      "name": "Left Side Collision Sensor",
+      "type": "Pressure + Proximity",
+      "range": "0.05m - 2m",
+      "frequency": "30Hz",
+      "location": "Left side of monorail",
+      "purpose": "Left adjacent monorail detection",
+      "data_fields": [
+        "distance",
+        "contact_detected",
+        "adjacent_monorail_id"
+      ]
+    },
+    "C2": {
+      "name": "Right Side Collision Sensor",
+      "type": "Pressure + Proximity",
+      "range": "0.05m - 2m",
+      "frequency": "30Hz",
+      "location": "Right side of monorail",
+      "purpose": "Right adjacent monorail detection",
+      "data_fields": [
+        "distance",
+        "contact_detected",
+        "adjacent_monorail_id"
+      ]
+    },
+    "D": {
+      "name": "Position & Orientation",
+      "type": "GPS + IMU + Encoder",
+      "range": "Global + local",
+      "frequency": "50Hz",
+      "location": "Central onboard computer",
+      "purpose": "Position tracking, tilt detection",
+      "data_fields": [
+        "gps_lat_long",
+        "slot_id",
+        "orientation",
+        "acceleration",
+        "angular_velocity"
+      ]
+    },
+    "E": {
+      "name": "Speed & Acceleration",
+      "type": "Encoder + Accelerometer",
+      "range": "0 - 50 km/h",
+      "frequency": "60Hz",
+      "location": "Wheel/drive encoder",
+      "purpose": "Speed monitoring, fault detection",
+      "data_fields": [
+        "current_speed",
+        "acceleration",
+        "slip_detected",
+        "brake_status"
+      ]
+    },
+    "F": {
+      "name": "Proximity-to-Neighbor",
+      "type": "Bluetooth 5.1 mesh",
+      "range": "0.5m - 50m",
+      "frequency": "20Hz",
+      "location": "Wireless beacon",
+      "purpose": "Monorail-to-monorail communication",
+      "data_fields": [
+        "adjacent_monorail_ids",
+        "relative_positions",
+        "status_messages"
+      ]
+    }
+  },
+  "external": {
+    "1": {
+      "name": "Barn Slot Occupancy",
+      "type": "IR/Magnetic",
+      "range": "5-10cm",
+      "frequency": "10Hz",
+      "location": "Each barn slot",
+      "purpose": "Slot occupancy detection",
+      "data_fields": [
+        "slot_id",
+        "monorail_id",
+        "occupied",
+        "charging_status"
+      ]
+    },
+    "2": {
+      "name": "Barn Exit Gate",
+      "type": "Proximity/Motion",
+      "range": "0.5-3m",
+      "frequency": "20Hz",
+      "location": "Barn exit",
+      "purpose": "Exit confirmation",
+      "data_fields": [
+        "monorail_id",
+        "exit_time",
+        "direction",
+        "speed"
+      ]
+    },
+    "3": {
+      "name": "Consolidation Entry",
+      "type": "Proximity",
+      "range": "0.5-3m",
+      "frequency": "20Hz",
+      "location": "Consolidation zone entry",
+      "purpose": "Entry detection",
+      "data_fields": [
+        "monorail_id",
+        "entry_time",
+        "queue_position",
+        "conflict_detected"
+      ]
+    },
+    "4": {
+      "name": "Consolidation Merge",
+      "type": "Position/Distance",
+      "range": "0-10m",
+      "frequency": "50Hz",
+      "location": "Merge point",
+      "purpose": "Merge monitoring",
+      "data_fields": [
+        "monorail_id",
+        "position_on_track",
+        "distance_to_next",
+        "merge_status"
+      ]
+    },
+    "5": {
+      "name": "Consolidation Exit",
+      "type": "Proximity/Position",
+      "range": "1-5m",
+      "frequency": "30Hz",
+      "location": "Consolidation exit",
+      "purpose": "Exit validation",
+      "data_fields": [
+        "monorail_id",
+        "exit_time",
+        "speed_final",
+        "override_status"
+      ]
+    },
+    "6": {
+      "name": "Track Integration",
+      "type": "Position/Speed",
+      "range": "0.5-10m",
+      "frequency": "40Hz",
+      "location": "Track transition",
+      "purpose": "Protocol handoff",
+      "data_fields": [
+        "monorail_id",
+        "integration_time",
+        "protocol_status",
+        "safety_level"
+      ]
+    }
+  }
+}

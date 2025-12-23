@@ -1,21 +1,76 @@
-fastapi==0.124.0
-uvicorn==0.30.0
-bleak==0.21.1
-pydantic==2.5.0
-aiofiles==23.2.1
-scikit-learn==1.5.0
-pandas==2.2.2
-numpy==1.26.4
-requests==2.32.3
-aiohttp==3.9.5
-joblib==1.4.2
-python-dotenv==1.0.1
-cryptography==42.0.5
-psutil==6.0.0
-RPi.GPIO==0.7.1
-adafruit-circuitpython-neopixel==8.0.0
-adafruit-circuitpython-rgb-display==1.0.0
+# WDW Automated Monorail System - Python Requirements
 
+# Core dependencies
+python=3.12
+numpy>=1.24.0
+pandas>=2.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
 
+# Testing
+test>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
 
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.0.0
+mkdocstrings>=0.22.0
+mkdocstrings-python>=1.0.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0
+mypy>=1.0.0
+pre-commit>=3.0.0
+
+# Blender integration
+bpy>=3.4.0
+
+# Web components
+fastapi>=0.100.0
+uvicorn>=0.23.0
+jinja2>=3.1.0
+
+# Data processing
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# System monitoring
+psutil>=5.9.0
+
+# Configuration
+pydantic-settings>=2.0.0
+
+# Async support
+aiohttp>=3.8.0
+anyio>=3.7.0
+
+# File handling
+python-magic>=0.4.27
+pillow>=10.0.0
+
+# Networking
+websocket-client>=1.6.0
+
+# CLI tools
+click>=8.1.0
+rich>=13.0.0
+
+# Type checking
+types-requests>=2.31.0
+
+# Build tools
+setuptools>=68.0.0
+wheel>=0.40.0
+build>=0.10.0
+
+# Version control
+gitpython>=3.1.0
+
+# Environment management
+python-dotenv>=1.0.0
 

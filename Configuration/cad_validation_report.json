@@ -1,0 +1,26 @@
+{
+  "validation_results": {
+    "passed": [
+      "\u2705 barn: Main barn structure with 6 beams and 12 parking slots (2486.7 KB)",
+      "\u2705 barn_render: Rendered image of barn model (1010.8 KB)"
+    ],
+    "failed": [],
+    "warnings": [
+      "\u26a0\ufe0f  barn structure validation failed",
+      "\u26a0\ufe0f  monorail_vehicles: Not yet created - 12 monorail vehicle models (M1-M12)",
+      "\u26a0\ufe0f  stations: Not yet created - 4 station models (Polynesian, Grand Floridian, Contemporary, Epcot)",
+      "\u26a0\ufe0f  track_system: Not yet created - Complete track system model",
+      "\u26a0\ufe0f  ttc: Not yet created - Ticket & Transportation Center model",
+      "\u26a0\ufe0f  maintenance: Not yet created - Maintenance facility model"
+    ],
+    "info": []
+  },
+  "statistics": {
+    "total_files": 7,
+    "existing_files": 2,
+    "missing_files": 5,
+    "total_size": 3581388
+  },
+  "completion_percentage": 28.57142857142857,
+  "timestamp": "2025-12-22"
+}

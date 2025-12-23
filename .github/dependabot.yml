@@ -1,0 +1,61 @@
+# Dependabot Configuration for WDW Monorail Sensor Framework
+
+version: 2
+updates:
+  # Maintain dependencies for Python
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "jarvis"
+    assignees:
+      - "jarvis"
+    labels:
+      - "dependencies"
+      - "python"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+
+  # Maintain GitHub Actions workflows
+  - package-ecosystem: "github-actions"
+    directory: "/.github"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "jarvis"
+    assignees:
+      - "jarvis"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+
+  # Configuration for security updates (high priority)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    target-branch: "main"
+    labels:
+      - "security"
+      - "urgent"
+    milestone: 1
+    reviewers:
+      - "jarvis"
+    assignees:
+      - "jarvis"
+    commit-message:
+      prefix: "fix"
+      prefix-development: "fix"
+      include: "scope"
+
+
+
