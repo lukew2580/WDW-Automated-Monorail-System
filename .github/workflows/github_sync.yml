@@ -1,0 +1,50 @@
+name: GitHub Sync
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 * * * *'  # Run hourly
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest sensor_system.tests.test_sensor_framework -v
+
+      - name: Sync with backup
+        run: |
+          # Add commands here to sync with backup repositories or services
+          echo "Syncing with backup..."
+
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'GitHub Sync Workflow Failed',
+              body: 'The GitHub Sync workflow failed. Please check the logs for details.'
+            });
+            console.log(`Created issue: ${issue.data.html_url}`);
+
