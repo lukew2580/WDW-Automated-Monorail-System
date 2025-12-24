@@ -3,7 +3,7 @@ name: Daily Sync
 on:
   schedule:
     - cron: '0 0 * * *'  # Run daily at midnight
-  workflow_dispatch:  # Allow manual triggering
+  workflow_dispatch:  # Allow manual trigger
 
 jobs:
   daily-sync:
@@ -25,13 +25,19 @@ jobs:
       - name: Run tests
         run: python -m unittest sensor_system.tests.test_sensor_framework -v
 
+      - name: Run automated maintenance
+        run: python /home/workspace/WDW-Automated-Monorail-System/Scripts/automated_maintenance.py
+
+      - name: Run Adam the Woo Memorial
+        run: python /home/workspace/WDW-Automated-Monorail-System/easter_eggs/adam_the_woo_memorial.py
+
       - name: Sync with backup
         run: |
-          mkdir -p /tmp/github_backup
-          cp -r . /tmp/github_backup/
-          echo "Backup created at /tmp/github_backup"
+          mkdir -p /tmp/monorail_backup
+          cp -r /home/workspace/WDW-Automated-Monorail-System/* /tmp/monorail_backup/
+          echo "Backup completed successfully."
 
-      - name: Notify on failure
+      - name: Create issue on failure
         if: failure()
         uses: actions/github-script@v6
         with:
@@ -39,8 +45,9 @@ jobs:
             const { data: issue } = await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: 'Daily Sync Workflow Failed',
-              body: 'The Daily Sync workflow failed. Please check the logs for details.'
+              title: 'Daily Sync Failed',
+              body: 'The daily sync workflow failed. Please check the logs for details.'
             });
             console.log(`Created issue: ${issue.data.html_url}`);
+
 
