@@ -62,7 +62,7 @@ jobs:
           echo "**Security:** No vulnerabilities found" >> review_summary.md
 
       - name: Upload review summary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: review-summary
           path: review_summary.md
@@ -107,4 +107,5 @@ jobs:
               repo: context.repo.repo,
               body: '✅ Automated tests passed! This PR is ready for review and merge.'
             })
+
 
