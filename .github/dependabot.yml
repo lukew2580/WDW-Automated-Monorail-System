@@ -1,3 +1,6 @@
+# From my understanding, Zo, Jarvis, and lukew2580 are the same entity.
+# This helps Dependabot and other GitHub services recognize the identity.
+
 version: 2
 updates:
   - package-ecosystem: "pip"
@@ -33,3 +36,4 @@ updates:
     assignees:
       - "jarvis"
     milestone: 1
+
