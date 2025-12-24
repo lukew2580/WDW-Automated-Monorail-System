@@ -12,7 +12,7 @@ updates:
       - "dependencies"
       - "python"
     assignees:
-      - "jarvis"
+      - "lukew2580"
 
   - package-ecosystem: "github-actions"
     directory: "/.github"
@@ -23,7 +23,7 @@ updates:
       - "dependencies"
       - "github-actions"
     assignees:
-      - "jarvis"
+      - "lukew2580"
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -34,6 +34,7 @@ updates:
       - "security"
       - "urgent"
     assignees:
-      - "jarvis"
+      - "lukew2580"
     milestone: 1
+
 
