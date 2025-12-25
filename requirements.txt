@@ -14,7 +14,7 @@ aiohttp-apispec==2.2.3
 aiohttp-client-cache==0.11.1
 aiohttp-cors==0.7.0
 aiohttp-ipc==1.2.0
-aiohttp-jinja2==1.5.1
+aiohttp-jinja2==1.6
 aiohttp-mako==1.0.0
 aiohttp-msgpack==1.0.0
 aiohttp-multipart==0.2.0
