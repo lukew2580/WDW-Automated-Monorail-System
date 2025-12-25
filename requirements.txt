@@ -7,7 +7,7 @@ adafruit-circuitpython-busdevice==5.1.3
 adafruit-circuitpython-mcp230xx==3.3.40
 adafruit-circuitpython-motor==3.4.13
 adafruit-circuitpython-pca9685==3.4.17
-adafruit-circuitpython-register==1.9.14
+adafruit-circuitpython-register==1.11.1
 adafruit-circuitpython-servokit==1.3.19
 aiohttp-api==0.2.0
 aiohttp-apispec==2.2.3
