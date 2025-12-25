@@ -21,7 +21,7 @@ adafruit-circuitpython-servokit==1.3.19
 # CVE-2024-52304: DoS via malformed POST requests
 # CVE-2024-23334: XSS on static file handling index pages  
 # CVE-2024-23829: Request smuggling via chunk extensions
-aiohttp==3.11.11
+aiohttp==3.13.2
 aiohttp-cors==0.7.0
 aiohttp-jinja2==1.6
 aiohttp-session==2.12.1
