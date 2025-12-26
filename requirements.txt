@@ -53,7 +53,7 @@ gevent==24.11.1
 gevent-websocket==0.10.1
 
 # Async and networking
-asyncio==3.4.3
+asyncio==4.0.0
 websockets==14.1
 pyserial==3.5
 pyserial-asyncio==0.6
