@@ -23,7 +23,7 @@ adafruit-circuitpython-servokit==1.3.19
 # CVE-2024-23829: Request smuggling via chunk extensions
 # CVE-2024-27306: XSS on index pages (fixed in 3.9.4+)
 # CVE-2024-42367: Path traversal with compressed files (fixed in 3.10.2+)
-aiohttp==3.11.11
+aiohttp==3.12.14
 aiohttp-cors==0.7.0
 aiohttp-jinja2==1.6
 aiohttp-session==2.12.1
@@ -34,8 +34,8 @@ aiohttp-retry==2.9.1
 
 # Flask ecosystem - UPDATED to fix CVEs
 # CVE-2024-6221: Flask-CORS Access-Control-Allow-Private-Network header issue
-flask==3.1.0
-flask-cors==5.0.0
+flask==3.1.1
+flask-cors==6.0.0
 flask-socketio==5.4.1
 
 # Jinja2 - UPDATED to fix CVE-2024-22195 (XSS via xmlattr)
@@ -43,12 +43,12 @@ Jinja2>=3.1.5
 
 # Socket.IO - UPDATED to fix CVE
 # CVE-2024-47174: RCE through malicious pickle deserialization
-python-socketio==5.12.1
+python-socketio==5.14.0
 
 # Eventlet/Gevent - UPDATED to fix CVEs
 # CVE-2024-22818: DoS via Tudoor mechanism in eventlet and dnspython  
 # CVE-2023-41419: gevent privilege escalation (fixed in 23.9.0+)
-eventlet==0.37.0
+eventlet==0.40.3
 gevent==24.11.1
 gevent-websocket==0.10.1
 
@@ -62,7 +62,7 @@ paho-mqtt==2.1.0
 
 # Security and cryptography
 bcrypt==4.2.1
-cryptography==44.0.0
+cryptography==44.0.1
 pyjwt==2.10.1
 pynacl==1.5.0
 pyopenssl==24.3.0
@@ -79,7 +79,7 @@ seaborn==0.13.2
 # Utilities
 psutil==6.1.1
 pyyaml==6.0.2
-requests==2.32.3
+requests==2.32.4
 
 # DNS library - patched for CVE-2024-22818 (Tudoor DoS)
 dnspython>=2.7.0
