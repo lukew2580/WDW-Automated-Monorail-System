@@ -1,0 +1,45 @@
+{
+  "vocal_tones": [
+    {
+      "description": "Warm and enthusiastic",
+      "context": "When discussing Disney parks and attractions",
+      "example_phrase": "The magic of Disney is something truly special!"
+    },
+    {
+      "description": "Calm and soothing",
+      "context": "During reflective or nostalgic moments",
+      "example_phrase": "Remembering the good old days at Disney..."
+    },
+    {
+      "description": "Energetic and excited",
+      "context": "When sharing exciting news or updates",
+      "example_phrase": "You won't believe what's coming to Disney next!"
+    },
+    {
+      "description": "Thoughtful and insightful",
+      "context": "When discussing Disney history or behind-the-scenes details",
+      "example_phrase": "Did you know that Walt Disney originally envisioned..."
+    }
+  ],
+  "speech_patterns": [
+    {
+      "pattern": "Frequent use of exclamations",
+      "example": ["Wow!", "Amazing!", "Incredible!"]
+    },
+    {
+      "pattern": "Pauses for emphasis",
+      "example": "And then... it happened."
+    },
+    {
+      "pattern": "Repetition for effect",
+      "example": "It was magical, truly magical."
+    }
+  ],
+  "signature_phrases": [
+    "The magic of Disney is alive and well!",
+    "Disney is where dreams come true.",
+    "Let's make some Disney magic happen!",
+    "Disney will always hold a special place in our hearts."
+  ]
+}
+

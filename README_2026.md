@@ -5,6 +5,10 @@ Welcome to the comprehensive documentation for the WDW Automated Monorail System
 
 ---
 
+The WDW Automated Monorail System represents a breakthrough in home automation and entertainment technology by combining three decades of Disney monorail experience with modern IoT technology. The hybrid WiFi/Bluetooth mesh network architecture provides a scalable, modular platform that grows with user needs.
+
+---
+
 ## Quick Start Guide
 
 ### 1. **Understand the Vision**
@@ -400,5 +404,6 @@ Monitor progress in `ROADMAP_2026.md`
 
 *Last Updated: January 2026*  
 *Next Update: February 2026*
+
 
 

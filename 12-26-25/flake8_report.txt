@@ -1,0 +1,2055 @@
+./Scripts/advanced_scheduling.py:10:1: F401 'typing.Optional' imported but unused
+./Scripts/advanced_scheduling.py:13:1: F401 'heapq' imported but unused
+./Scripts/advanced_scheduling.py:15:80: E501 line too long (88 > 79 characters)
+./Scripts/advanced_scheduling.py:17:1: E302 expected 2 blank lines, found 1
+./Scripts/advanced_scheduling.py:22:1: E302 expected 2 blank lines, found 1
+./Scripts/advanced_scheduling.py:31:1: E302 expected 2 blank lines, found 1
+./Scripts/advanced_scheduling.py:40:1: E302 expected 2 blank lines, found 1
+./Scripts/advanced_scheduling.py:42:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:48:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:52:75: W291 trailing whitespace
+./Scripts/advanced_scheduling.py:53:27: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:53:80: E501 line too long (91 > 79 characters)
+./Scripts/advanced_scheduling.py:55:26: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:57:26: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:59:26: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:61:29: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:63:26: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:65:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:82:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:97:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:110:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:114:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:116:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:117:80: E501 line too long (84 > 79 characters)
+./Scripts/advanced_scheduling.py:117:85: W291 trailing whitespace
+./Scripts/advanced_scheduling.py:118:27: E128 continuation line under-indented for visual indent
+./Scripts/advanced_scheduling.py:121:80: E501 line too long (97 > 79 characters)
+./Scripts/advanced_scheduling.py:122:80: E501 line too long (91 > 79 characters)
+./Scripts/advanced_scheduling.py:123:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:130:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:140:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:143:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:145:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:146:80: E501 line too long (103 > 79 characters)
+./Scripts/advanced_scheduling.py:153:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:158:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:168:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:170:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:175:80: E501 line too long (109 > 79 characters)
+./Scripts/advanced_scheduling.py:179:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:181:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:184:9: F841 local variable 'route' is assigned to but never used
+./Scripts/advanced_scheduling.py:187:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:193:80: E501 line too long (89 > 79 characters)
+./Scripts/advanced_scheduling.py:205:1: E302 expected 2 blank lines, found 1
+./Scripts/advanced_scheduling.py:210:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:212:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:216:80: E501 line too long (82 > 79 characters)
+./Scripts/advanced_scheduling.py:219:80: E501 line too long (138 > 79 characters)
+./Scripts/advanced_scheduling.py:221:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:229:80: E501 line too long (87 > 79 characters)
+./Scripts/advanced_scheduling.py:230:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:233:80: E501 line too long (109 > 79 characters)
+./Scripts/advanced_scheduling.py:234:80: E501 line too long (106 > 79 characters)
+./Scripts/advanced_scheduling.py:235:80: E501 line too long (115 > 79 characters)
+./Scripts/advanced_scheduling.py:236:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:242:1: W293 blank line contains whitespace
+./Scripts/advanced_scheduling.py:249:1: W391 blank line at end of file
+./Scripts/api_server.py:7:1: F401 'json' imported but unused
+./Scripts/api_server.py:10:1: F401 'fastapi.responses.FileResponse' imported but unused
+./Scripts/api_server.py:11:1: F401 'fastapi.staticfiles.StaticFiles' imported but unused
+./Scripts/api_server.py:19:80: E501 line too long (85 > 79 characters)
+./Scripts/api_server.py:21:5: F401 'energy_management.EnergyConsumptionRecord' imported but unused
+./Scripts/api_server.py:21:80: E501 line too long (81 > 79 characters)
+./Scripts/api_server.py:28:80: E501 line too long (88 > 79 characters)
+./Scripts/api_server.py:36:80: E501 line too long (90 > 79 characters)
+./Scripts/api_server.py:37:80: E501 line too long (86 > 79 characters)
+./Scripts/api_server.py:38:80: E501 line too long (80 > 79 characters)
+./Scripts/api_server.py:39:80: E501 line too long (82 > 79 characters)
+./Scripts/api_server.py:57:17: W291 trailing whitespace
+./Scripts/api_server.py:64:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:70:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:84:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:97:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:111:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:116:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:132:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:148:80: E501 line too long (95 > 79 characters)
+./Scripts/api_server.py:152:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:169:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:176:1: W293 blank line contains whitespace
+./Scripts/api_server.py:179:1: W293 blank line contains whitespace
+./Scripts/api_server.py:182:1: W293 blank line contains whitespace
+./Scripts/api_server.py:185:1: W293 blank line contains whitespace
+./Scripts/api_server.py:193:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:197:80: E501 line too long (88 > 79 characters)
+./Scripts/api_server.py:198:1: W293 blank line contains whitespace
+./Scripts/api_server.py:202:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:206:1: W293 blank line contains whitespace
+./Scripts/api_server.py:209:1: W293 blank line contains whitespace
+./Scripts/api_server.py:219:1: W293 blank line contains whitespace
+./Scripts/api_server.py:222:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:228:80: E501 line too long (81 > 79 characters)
+./Scripts/api_server.py:229:1: W293 blank line contains whitespace
+./Scripts/api_server.py:233:1: W293 blank line contains whitespace
+./Scripts/api_server.py:243:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:248:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:257:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:266:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:271:1: W293 blank line contains whitespace
+./Scripts/api_server.py:277:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:282:1: W293 blank line contains whitespace
+./Scripts/api_server.py:287:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:294:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:298:80: E501 line too long (99 > 79 characters)
+./Scripts/api_server.py:299:1: W293 blank line contains whitespace
+./Scripts/api_server.py:304:1: W293 blank line contains whitespace
+./Scripts/api_server.py:311:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:315:80: E501 line too long (99 > 79 characters)
+./Scripts/api_server.py:316:1: W293 blank line contains whitespace
+./Scripts/api_server.py:325:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:329:80: E501 line too long (99 > 79 characters)
+./Scripts/api_server.py:330:1: W293 blank line contains whitespace
+./Scripts/api_server.py:339:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:340:42: F821 undefined name 'Dict'
+./Scripts/api_server.py:343:80: E501 line too long (99 > 79 characters)
+./Scripts/api_server.py:344:1: W293 blank line contains whitespace
+./Scripts/api_server.py:355:1: W293 blank line contains whitespace
+./Scripts/api_server.py:360:80: E501 line too long (80 > 79 characters)
+./Scripts/api_server.py:363:80: E501 line too long (85 > 79 characters)
+./Scripts/api_server.py:365:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:369:80: E501 line too long (91 > 79 characters)
+./Scripts/api_server.py:370:1: W293 blank line contains whitespace
+./Scripts/api_server.py:375:80: E501 line too long (89 > 79 characters)
+./Scripts/api_server.py:378:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:382:80: E501 line too long (91 > 79 characters)
+./Scripts/api_server.py:383:1: W293 blank line contains whitespace
+./Scripts/api_server.py:388:1: W293 blank line contains whitespace
+./Scripts/api_server.py:395:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:396:36: F821 undefined name 'Dict'
+./Scripts/api_server.py:399:80: E501 line too long (91 > 79 characters)
+./Scripts/api_server.py:400:1: W293 blank line contains whitespace
+./Scripts/api_server.py:408:1: W293 blank line contains whitespace
+./Scripts/api_server.py:414:1: W293 blank line contains whitespace
+./Scripts/api_server.py:420:80: E501 line too long (88 > 79 characters)
+./Scripts/api_server.py:422:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:426:80: E501 line too long (94 > 79 characters)
+./Scripts/api_server.py:427:1: W293 blank line contains whitespace
+./Scripts/api_server.py:434:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:435:33: F821 undefined name 'Dict'
+./Scripts/api_server.py:438:80: E501 line too long (94 > 79 characters)
+./Scripts/api_server.py:439:1: W293 blank line contains whitespace
+./Scripts/api_server.py:448:1: W293 blank line contains whitespace
+./Scripts/api_server.py:455:80: E501 line too long (85 > 79 characters)
+./Scripts/api_server.py:457:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:461:80: E501 line too long (94 > 79 characters)
+./Scripts/api_server.py:462:1: W293 blank line contains whitespace
+./Scripts/api_server.py:469:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:473:80: E501 line too long (95 > 79 characters)
+./Scripts/api_server.py:474:1: W293 blank line contains whitespace
+./Scripts/api_server.py:478:80: E501 line too long (81 > 79 characters)
+./Scripts/api_server.py:481:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:485:80: E501 line too long (95 > 79 characters)
+./Scripts/api_server.py:486:1: W293 blank line contains whitespace
+./Scripts/api_server.py:493:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:505:80: E501 line too long (112 > 79 characters)
+./Scripts/api_server.py:506:80: E501 line too long (115 > 79 characters)
+./Scripts/api_server.py:509:80: E501 line too long (104 > 79 characters)
+./Scripts/api_server.py:510:80: E501 line too long (100 > 79 characters)
+./Scripts/api_server.py:513:80: E501 line too long (107 > 79 characters)
+./Scripts/api_server.py:514:80: E501 line too long (112 > 79 characters)
+./Scripts/api_server.py:517:80: E501 line too long (108 > 79 characters)
+./Scripts/api_server.py:518:80: E501 line too long (182 > 79 characters)
+./Scripts/api_server.py:522:1: W293 blank line contains whitespace
+./Scripts/api_server.py:524:80: E501 line too long (112 > 79 characters)
+./Scripts/api_server.py:526:1: W293 blank line contains whitespace
+./Scripts/api_server.py:533:1: W293 blank line contains whitespace
+./Scripts/api_server.py:539:1: E302 expected 2 blank lines, found 1
+./Scripts/api_server.py:547:1: W293 blank line contains whitespace
+./Scripts/api_server.py:565:1: W293 blank line contains whitespace
+./Scripts/api_server.py:568:5: E722 do not use bare 'except'
+./Scripts/api_server.py:577:1: W391 blank line at end of file
+./Scripts/api_test_server.py:9:1: F401 'threading.Thread' imported but unused
+./Scripts/api_test_server.py:12:1: E302 expected 2 blank lines, found 1
+./Scripts/api_test_server.py:15:80: E501 line too long (112 > 79 characters)
+./Scripts/api_test_server.py:16:80: E501 line too long (114 > 79 characters)
+./Scripts/api_test_server.py:17:80: E501 line too long (110 > 79 characters)
+./Scripts/api_test_server.py:18:80: E501 line too long (113 > 79 characters)
+./Scripts/api_test_server.py:19:80: E501 line too long (113 > 79 characters)
+./Scripts/api_test_server.py:20:80: E501 line too long (111 > 79 characters)
+./Scripts/api_test_server.py:21:80: E501 line too long (113 > 79 characters)
+./Scripts/api_test_server.py:22:80: E501 line too long (113 > 79 characters)
+./Scripts/api_test_server.py:23:80: E501 line too long (112 > 79 characters)
+./Scripts/api_test_server.py:24:80: E501 line too long (114 > 79 characters)
+./Scripts/api_test_server.py:25:80: E501 line too long (111 > 79 characters)
+./Scripts/api_test_server.py:26:80: E501 line too long (112 > 79 characters)
+./Scripts/api_test_server.py:41:80: E501 line too long (98 > 79 characters)
+./Scripts/api_test_server.py:42:1: W293 blank line contains whitespace
+./Scripts/api_test_server.py:46:80: E501 line too long (91 > 79 characters)
+./Scripts/api_test_server.py:47:80: E501 line too long (88 > 79 characters)
+./Scripts/api_test_server.py:48:80: E501 line too long (98 > 79 characters)
+./Scripts/api_test_server.py:49:1: W293 blank line contains whitespace
+./Scripts/api_test_server.py:54:1: W293 blank line contains whitespace
+./Scripts/api_test_server.py:60:1: W293 blank line contains whitespace
+./Scripts/api_test_server.py:66:1: W293 blank line contains whitespace
+./Scripts/api_test_server.py:74:1: E305 expected 2 blank lines after class or function definition, found 1
+./Scripts/api_test_server.py:78:1: W391 blank line at end of file
+./Scripts/automated_maintenance.py:5:80: E501 line too long (93 > 79 characters)
+./Scripts/automated_maintenance.py:17:1: F401 'typing.List' imported but unused
+./Scripts/automated_maintenance.py:17:1: F401 'typing.Optional' imported but unused
+./Scripts/automated_maintenance.py:17:1: F401 'typing.Tuple' imported but unused
+./Scripts/automated_maintenance.py:25:80: E501 line too long (92 > 79 characters)
+./Scripts/automated_maintenance.py:30:1: E302 expected 2 blank lines, found 1
+./Scripts/automated_maintenance.py:33:80: E501 line too long (89 > 79 characters)
+./Scripts/automated_maintenance.py:46:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:50:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:57:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:61:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:64:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:69:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:76:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:85:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:105:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:118:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:122:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:125:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:126:80: E501 line too long (91 > 79 characters)
+./Scripts/automated_maintenance.py:140:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:152:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:155:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:162:77: W291 trailing whitespace
+./Scripts/automated_maintenance.py:163:39: E128 continuation line under-indented for visual indent
+./Scripts/automated_maintenance.py:163:80: E501 line too long (84 > 79 characters)
+./Scripts/automated_maintenance.py:165:17: E722 do not use bare 'except'
+./Scripts/automated_maintenance.py:167:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:174:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:178:80: E501 line too long (94 > 79 characters)
+./Scripts/automated_maintenance.py:183:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:186:80: E501 line too long (81 > 79 characters)
+./Scripts/automated_maintenance.py:187:80: E501 line too long (84 > 79 characters)
+./Scripts/automated_maintenance.py:188:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:204:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:224:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:228:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:231:80: E501 line too long (80 > 79 characters)
+./Scripts/automated_maintenance.py:232:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:234:80: E501 line too long (93 > 79 characters)
+./Scripts/automated_maintenance.py:235:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:246:13: E722 do not use bare 'except'
+./Scripts/automated_maintenance.py:248:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:264:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:277:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:280:80: E501 line too long (81 > 79 characters)
+./Scripts/automated_maintenance.py:281:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:284:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:286:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:293:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:296:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:308:80: E501 line too long (80 > 79 characters)
+./Scripts/automated_maintenance.py:309:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:311:25: F541 f-string is missing placeholders
+./Scripts/automated_maintenance.py:312:80: E501 line too long (94 > 79 characters)
+./Scripts/automated_maintenance.py:313:80: E501 line too long (100 > 79 characters)
+./Scripts/automated_maintenance.py:314:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:316:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:323:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:327:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:331:80: E501 line too long (88 > 79 characters)
+./Scripts/automated_maintenance.py:332:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:334:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:339:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:340:80: E501 line too long (99 > 79 characters)
+./Scripts/automated_maintenance.py:341:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:343:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:350:80: E501 line too long (82 > 79 characters)
+./Scripts/automated_maintenance.py:351:80: E501 line too long (90 > 79 characters)
+./Scripts/automated_maintenance.py:352:80: E501 line too long (91 > 79 characters)
+./Scripts/automated_maintenance.py:353:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:357:1: E305 expected 2 blank lines after class or function definition, found 1
+./Scripts/automated_maintenance.py:361:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:364:1: W293 blank line contains whitespace
+./Scripts/automated_maintenance.py:367:1: W391 blank line at end of file
+./Scripts/bluetooth_enhanced.py:10:1: F401 'os' imported but unused
+./Scripts/bluetooth_enhanced.py:17:1: F401 'bleak' imported but unused
+./Scripts/bluetooth_enhanced.py:18:1: F401 'bleak.BleakScanner' imported but unused
+./Scripts/bluetooth_enhanced.py:33:58: W291 trailing whitespace
+./Scripts/bluetooth_enhanced.py:40:80: E501 line too long (80 > 79 characters)
+./Scripts/bluetooth_enhanced.py:52:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:55:80: E501 line too long (109 > 79 characters)
+./Scripts/bluetooth_enhanced.py:57:80: E501 line too long (95 > 79 characters)
+./Scripts/bluetooth_enhanced.py:59:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:63:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:66:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:82:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:83:80: E501 line too long (87 > 79 characters)
+./Scripts/bluetooth_enhanced.py:87:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:96:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:102:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:107:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:112:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:122:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:125:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:127:80: E501 line too long (89 > 79 characters)
+./Scripts/bluetooth_enhanced.py:128:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:133:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:136:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:140:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:146:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:149:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:150:80: E501 line too long (106 > 79 characters)
+./Scripts/bluetooth_enhanced.py:152:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:156:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:159:80: E501 line too long (121 > 79 characters)
+./Scripts/bluetooth_enhanced.py:161:80: E501 line too long (143 > 79 characters)
+./Scripts/bluetooth_enhanced.py:162:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:164:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:175:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:180:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:181:80: E501 line too long (99 > 79 characters)
+./Scripts/bluetooth_enhanced.py:182:80: E501 line too long (149 > 79 characters)
+./Scripts/bluetooth_enhanced.py:183:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:186:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:188:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:205:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:209:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:210:80: E501 line too long (88 > 79 characters)
+./Scripts/bluetooth_enhanced.py:212:80: E501 line too long (80 > 79 characters)
+./Scripts/bluetooth_enhanced.py:213:80: E501 line too long (103 > 79 characters)
+./Scripts/bluetooth_enhanced.py:214:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:215:80: E501 line too long (122 > 79 characters)
+./Scripts/bluetooth_enhanced.py:220:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:225:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:227:13: F841 local variable 'message_json' is assigned to but never used
+./Scripts/bluetooth_enhanced.py:229:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:230:80: E501 line too long (147 > 79 characters)
+./Scripts/bluetooth_enhanced.py:231:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:234:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:241:80: E501 line too long (118 > 79 characters)
+./Scripts/bluetooth_enhanced.py:243:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:246:80: E501 line too long (120 > 79 characters)
+./Scripts/bluetooth_enhanced.py:248:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:252:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:269:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:271:80: E501 line too long (102 > 79 characters)
+./Scripts/bluetooth_enhanced.py:274:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:275:80: E501 line too long (105 > 79 characters)
+./Scripts/bluetooth_enhanced.py:279:80: E501 line too long (114 > 79 characters)
+./Scripts/bluetooth_enhanced.py:281:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:284:80: E501 line too long (119 > 79 characters)
+./Scripts/bluetooth_enhanced.py:286:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:288:80: E501 line too long (100 > 79 characters)
+./Scripts/bluetooth_enhanced.py:291:80: E501 line too long (86 > 79 characters)
+./Scripts/bluetooth_enhanced.py:293:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:298:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:300:80: E501 line too long (122 > 79 characters)
+./Scripts/bluetooth_enhanced.py:304:80: E501 line too long (144 > 79 characters)
+./Scripts/bluetooth_enhanced.py:305:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:306:80: E501 line too long (164 > 79 characters)
+./Scripts/bluetooth_enhanced.py:307:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:309:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_enhanced.py:310:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:315:80: E501 line too long (88 > 79 characters)
+./Scripts/bluetooth_enhanced.py:316:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:318:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:326:80: E501 line too long (89 > 79 characters)
+./Scripts/bluetooth_enhanced.py:327:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:329:80: E501 line too long (121 > 79 characters)
+./Scripts/bluetooth_enhanced.py:330:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:332:80: E501 line too long (90 > 79 characters)
+./Scripts/bluetooth_enhanced.py:335:80: E501 line too long (96 > 79 characters)
+./Scripts/bluetooth_enhanced.py:336:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:338:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:340:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:344:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:348:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:349:80: E501 line too long (139 > 79 characters)
+./Scripts/bluetooth_enhanced.py:350:80: E501 line too long (224 > 79 characters)
+./Scripts/bluetooth_enhanced.py:351:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:359:80: E501 line too long (93 > 79 characters)
+./Scripts/bluetooth_enhanced.py:360:80: E501 line too long (97 > 79 characters)
+./Scripts/bluetooth_enhanced.py:366:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:367:80: E501 line too long (85 > 79 characters)
+./Scripts/bluetooth_enhanced.py:378:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:386:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:390:80: E501 line too long (96 > 79 characters)
+./Scripts/bluetooth_enhanced.py:392:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:395:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:398:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:400:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:401:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_enhanced.py:407:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:411:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:412:80: E501 line too long (104 > 79 characters)
+./Scripts/bluetooth_enhanced.py:414:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:418:80: E501 line too long (115 > 79 characters)
+./Scripts/bluetooth_enhanced.py:420:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:424:80: E501 line too long (89 > 79 characters)
+./Scripts/bluetooth_enhanced.py:426:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:429:80: E501 line too long (125 > 79 characters)
+./Scripts/bluetooth_enhanced.py:430:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:434:80: E501 line too long (94 > 79 characters)
+./Scripts/bluetooth_enhanced.py:435:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:438:80: E501 line too long (138 > 79 characters)
+./Scripts/bluetooth_enhanced.py:439:80: E501 line too long (159 > 79 characters)
+./Scripts/bluetooth_enhanced.py:440:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:446:80: E501 line too long (126 > 79 characters)
+./Scripts/bluetooth_enhanced.py:447:80: E501 line too long (97 > 79 characters)
+./Scripts/bluetooth_enhanced.py:453:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:460:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:462:80: E501 line too long (80 > 79 characters)
+./Scripts/bluetooth_enhanced.py:464:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:467:80: E501 line too long (88 > 79 characters)
+./Scripts/bluetooth_enhanced.py:470:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:471:80: E501 line too long (87 > 79 characters)
+./Scripts/bluetooth_enhanced.py:475:80: E501 line too long (87 > 79 characters)
+./Scripts/bluetooth_enhanced.py:476:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:477:80: E501 line too long (141 > 79 characters)
+./Scripts/bluetooth_enhanced.py:482:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:487:80: E501 line too long (139 > 79 characters)
+./Scripts/bluetooth_enhanced.py:489:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:491:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:492:80: E501 line too long (105 > 79 characters)
+./Scripts/bluetooth_enhanced.py:497:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:499:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:503:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:507:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:512:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:519:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:523:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:527:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:530:80: E501 line too long (112 > 79 characters)
+./Scripts/bluetooth_enhanced.py:531:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:533:80: E501 line too long (104 > 79 characters)
+./Scripts/bluetooth_enhanced.py:534:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:539:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:540:80: E501 line too long (121 > 79 characters)
+./Scripts/bluetooth_enhanced.py:541:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:543:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:547:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:552:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:554:80: E501 line too long (86 > 79 characters)
+./Scripts/bluetooth_enhanced.py:555:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:558:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:563:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:565:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:567:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:570:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:576:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:579:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:584:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:590:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:594:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:597:80: E501 line too long (121 > 79 characters)
+./Scripts/bluetooth_enhanced.py:609:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:612:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:620:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:623:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:628:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:638:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:641:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:646:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:650:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:654:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:661:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:664:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:667:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:670:80: E501 line too long (100 > 79 characters)
+./Scripts/bluetooth_enhanced.py:671:80: E501 line too long (87 > 79 characters)
+./Scripts/bluetooth_enhanced.py:672:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:673:80: E501 line too long (100 > 79 characters)
+./Scripts/bluetooth_enhanced.py:674:80: E501 line too long (101 > 79 characters)
+./Scripts/bluetooth_enhanced.py:675:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:678:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:680:80: E501 line too long (90 > 79 characters)
+./Scripts/bluetooth_enhanced.py:682:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:684:80: E501 line too long (93 > 79 characters)
+./Scripts/bluetooth_enhanced.py:686:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:689:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:693:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:696:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:700:80: E501 line too long (92 > 79 characters)
+./Scripts/bluetooth_enhanced.py:701:20: E128 continuation line under-indented for visual indent
+./Scripts/bluetooth_enhanced.py:702:20: E128 continuation line under-indented for visual indent
+./Scripts/bluetooth_enhanced.py:703:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:706:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_enhanced.py:707:80: E501 line too long (96 > 79 characters)
+./Scripts/bluetooth_enhanced.py:708:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:712:1: W293 blank line contains whitespace
+./Scripts/bluetooth_enhanced.py:726:1: W391 blank line at end of file
+./Scripts/bluetooth_mesh.py:13:1: F401 'bleak' imported but unused
+./Scripts/bluetooth_mesh.py:14:1: F401 'bleak.BleakScanner' imported but unused
+./Scripts/bluetooth_mesh.py:16:80: E501 line too long (88 > 79 characters)
+./Scripts/bluetooth_mesh.py:19:1: E302 expected 2 blank lines, found 1
+./Scripts/bluetooth_mesh.py:30:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:33:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:41:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:52:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_mesh.py:54:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:65:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:71:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:84:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:88:9: F841 local variable 'status_json' is assigned to but never used
+./Scripts/bluetooth_mesh.py:89:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:94:80: E501 line too long (138 > 79 characters)
+./Scripts/bluetooth_mesh.py:96:80: E501 line too long (80 > 79 characters)
+./Scripts/bluetooth_mesh.py:97:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:101:80: E501 line too long (134 > 79 characters)
+./Scripts/bluetooth_mesh.py:106:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:107:80: E501 line too long (85 > 79 characters)
+./Scripts/bluetooth_mesh.py:115:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_mesh.py:116:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:121:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:124:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:126:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:127:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_mesh.py:132:80: E501 line too long (104 > 79 characters)
+./Scripts/bluetooth_mesh.py:136:80: E501 line too long (115 > 79 characters)
+./Scripts/bluetooth_mesh.py:138:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:144:80: E501 line too long (84 > 79 characters)
+./Scripts/bluetooth_mesh.py:145:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:149:80: E501 line too long (94 > 79 characters)
+./Scripts/bluetooth_mesh.py:150:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:156:80: E501 line too long (95 > 79 characters)
+./Scripts/bluetooth_mesh.py:161:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:166:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:172:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:173:80: E501 line too long (87 > 79 characters)
+./Scripts/bluetooth_mesh.py:177:80: E501 line too long (87 > 79 characters)
+./Scripts/bluetooth_mesh.py:178:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:179:80: E501 line too long (89 > 79 characters)
+./Scripts/bluetooth_mesh.py:184:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:186:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:189:80: E501 line too long (102 > 79 characters)
+./Scripts/bluetooth_mesh.py:191:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:193:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:194:80: E501 line too long (105 > 79 characters)
+./Scripts/bluetooth_mesh.py:199:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:201:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:207:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:212:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:219:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:230:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:234:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:237:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:240:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:244:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:249:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:254:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:257:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:260:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:262:80: E501 line too long (91 > 79 characters)
+./Scripts/bluetooth_mesh.py:264:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:266:80: E501 line too long (93 > 79 characters)
+./Scripts/bluetooth_mesh.py:268:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:271:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:275:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:278:1: W293 blank line contains whitespace
+./Scripts/bluetooth_mesh.py:284:1: W391 blank line at end of file
+./Scripts/bluetooth_pairing.py:11:1: F401 'enum.Enum' imported but unused
+./Scripts/bluetooth_pairing.py:13:80: E501 line too long (88 > 79 characters)
+./Scripts/bluetooth_pairing.py:22:1: E302 expected 2 blank lines, found 1
+./Scripts/bluetooth_pairing.py:32:1: E302 expected 2 blank lines, found 1
+./Scripts/bluetooth_pairing.py:34:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:40:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:47:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:84:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:89:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:91:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:97:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:102:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:108:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:113:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:119:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:121:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:126:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:138:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:143:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:146:80: E501 line too long (81 > 79 characters)
+./Scripts/bluetooth_pairing.py:148:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:157:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:163:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:165:80: E501 line too long (105 > 79 characters)
+./Scripts/bluetooth_pairing.py:166:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:170:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:183:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:188:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:190:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:199:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:212:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:213:80: E501 line too long (83 > 79 characters)
+./Scripts/bluetooth_pairing.py:217:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:229:1: E302 expected 2 blank lines, found 1
+./Scripts/bluetooth_pairing.py:234:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:236:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:241:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:247:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:250:80: E501 line too long (107 > 79 characters)
+./Scripts/bluetooth_pairing.py:251:80: E501 line too long (110 > 79 characters)
+./Scripts/bluetooth_pairing.py:252:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:259:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:266:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:271:1: W293 blank line contains whitespace
+./Scripts/bluetooth_pairing.py:278:1: W391 blank line at end of file
+./Scripts/cad_file_validator.py:13:1: F401 'pathlib.Path' imported but unused
+./Scripts/cad_file_validator.py:15:1: E302 expected 2 blank lines, found 1
+./Scripts/cad_file_validator.py:22:80: E501 line too long (86 > 79 characters)
+./Scripts/cad_file_validator.py:42:80: E501 line too long (100 > 79 characters)
+./Scripts/cad_file_validator.py:64:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:71:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:78:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:81:80: E501 line too long (82 > 79 characters)
+./Scripts/cad_file_validator.py:86:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:90:80: E501 line too long (86 > 79 characters)
+./Scripts/cad_file_validator.py:93:80: E501 line too long (108 > 79 characters)
+./Scripts/cad_file_validator.py:95:80: E501 line too long (84 > 79 characters)
+./Scripts/cad_file_validator.py:96:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:101:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:103:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:104:9: F841 local variable 'e' is assigned to but never used
+./Scripts/cad_file_validator.py:106:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:111:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:115:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:119:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:122:80: E501 line too long (115 > 79 characters)
+./Scripts/cad_file_validator.py:123:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:125:80: E501 line too long (92 > 79 characters)
+./Scripts/cad_file_validator.py:126:80: E501 line too long (100 > 79 characters)
+./Scripts/cad_file_validator.py:128:80: E501 line too long (126 > 79 characters)
+./Scripts/cad_file_validator.py:130:80: E501 line too long (106 > 79 characters)
+./Scripts/cad_file_validator.py:132:80: E501 line too long (142 > 79 characters)
+./Scripts/cad_file_validator.py:132:124: E231 missing whitespace after ','
+./Scripts/cad_file_validator.py:136:80: E501 line too long (104 > 79 characters)
+./Scripts/cad_file_validator.py:138:80: E501 line too long (116 > 79 characters)
+./Scripts/cad_file_validator.py:139:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:141:80: E501 line too long (125 > 79 characters)
+./Scripts/cad_file_validator.py:142:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:144:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:149:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:152:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:155:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:158:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:163:80: E501 line too long (116 > 79 characters)
+./Scripts/cad_file_validator.py:164:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:165:80: E501 line too long (125 > 79 characters)
+./Scripts/cad_file_validator.py:167:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:169:80: E501 line too long (83 > 79 characters)
+./Scripts/cad_file_validator.py:170:19: F541 f-string is missing placeholders
+./Scripts/cad_file_validator.py:172:80: E501 line too long (95 > 79 characters)
+./Scripts/cad_file_validator.py:174:80: E501 line too long (93 > 79 characters)
+./Scripts/cad_file_validator.py:175:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:181:80: E501 line too long (142 > 79 characters)
+./Scripts/cad_file_validator.py:184:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:187:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:190:1: E305 expected 2 blank lines after class or function definition, found 1
+./Scripts/cad_file_validator.py:194:80: E501 line too long (105 > 79 characters)
+./Scripts/cad_file_validator.py:195:1: W293 blank line contains whitespace
+./Scripts/cad_file_validator.py:204:1: W391 blank line at end of file
+./Scripts/camera_integration.py:13:80: E501 line too long (88 > 79 characters)
+./Scripts/camera_integration.py:36:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:37:80: E501 line too long (103 > 79 characters)
+./Scripts/camera_integration.py:44:80: E501 line too long (83 > 79 characters)
+./Scripts/camera_integration.py:45:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:50:80: E501 line too long (100 > 79 characters)
+./Scripts/camera_integration.py:55:80: E501 line too long (101 > 79 characters)
+./Scripts/camera_integration.py:59:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:65:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:70:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:74:80: E501 line too long (96 > 79 characters)
+./Scripts/camera_integration.py:75:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:84:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:91:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:96:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:99:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:103:80: E501 line too long (93 > 79 characters)
+./Scripts/camera_integration.py:108:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:112:80: E501 line too long (87 > 79 characters)
+./Scripts/camera_integration.py:116:80: E501 line too long (84 > 79 characters)
+./Scripts/camera_integration.py:118:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:127:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:132:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:133:80: E501 line too long (105 > 79 characters)
+./Scripts/camera_integration.py:138:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:146:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:147:80: E501 line too long (80 > 79 characters)
+./Scripts/camera_integration.py:156:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:164:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:169:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:173:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:177:80: E501 line too long (143 > 79 characters)
+./Scripts/camera_integration.py:178:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:182:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:192:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:194:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:196:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:201:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:205:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:208:5: F841 local variable 'detections' is assigned to but never used
+./Scripts/camera_integration.py:209:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:212:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:216:1: W293 blank line contains whitespace
+./Scripts/camera_integration.py:222:1: W391 blank line at end of file
+./Scripts/collision_avoidance.py:10:1: F401 'typing.Optional' imported but unused
+./Scripts/collision_avoidance.py:11:1: F401 'datetime.datetime' imported but unused
+./Scripts/collision_avoidance.py:14:80: E501 line too long (88 > 79 characters)
+./Scripts/collision_avoidance.py:16:1: E302 expected 2 blank lines, found 1
+./Scripts/collision_avoidance.py:22:1: E302 expected 2 blank lines, found 1
+./Scripts/collision_avoidance.py:32:1: E302 expected 2 blank lines, found 1
+./Scripts/collision_avoidance.py:42:1: E302 expected 2 blank lines, found 1
+./Scripts/collision_avoidance.py:44:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:50:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:58:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:64:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:73:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:76:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:77:80: E501 line too long (81 > 79 characters)
+./Scripts/collision_avoidance.py:77:82: W291 trailing whitespace
+./Scripts/collision_avoidance.py:78:29: E128 continuation line under-indented for visual indent
+./Scripts/collision_avoidance.py:81:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:91:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:94:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:97:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:99:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:108:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:113:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:117:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:122:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:124:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:128:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:131:80: E501 line too long (108 > 79 characters)
+./Scripts/collision_avoidance.py:135:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:139:80: E501 line too long (109 > 79 characters)
+./Scripts/collision_avoidance.py:142:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:146:80: E501 line too long (102 > 79 characters)
+./Scripts/collision_avoidance.py:149:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:154:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:159:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:162:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:170:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:172:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:174:80: E501 line too long (121 > 79 characters)
+./Scripts/collision_avoidance.py:175:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:177:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:184:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:203:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:212:1: E302 expected 2 blank lines, found 1
+./Scripts/collision_avoidance.py:217:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:219:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:224:80: E501 line too long (88 > 79 characters)
+./Scripts/collision_avoidance.py:226:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:230:80: E501 line too long (89 > 79 characters)
+./Scripts/collision_avoidance.py:232:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:236:80: E501 line too long (85 > 79 characters)
+./Scripts/collision_avoidance.py:240:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:244:80: E501 line too long (88 > 79 characters)
+./Scripts/collision_avoidance.py:246:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:253:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:259:1: W293 blank line contains whitespace
+./Scripts/collision_avoidance.py:266:1: W391 blank line at end of file
+./Scripts/energy_management.py:14:1: F401 'typing.Optional' imported but unused
+./Scripts/energy_management.py:14:1: F401 'typing.Tuple' imported but unused
+./Scripts/energy_management.py:31:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:32:62: W291 trailing whitespace
+./Scripts/energy_management.py:33:57: W291 trailing whitespace
+./Scripts/energy_management.py:41:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:46:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:50:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:52:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:63:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:78:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:83:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:90:80: E501 line too long (105 > 79 characters)
+./Scripts/energy_management.py:91:80: E501 line too long (85 > 79 characters)
+./Scripts/energy_management.py:94:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:99:80: E501 line too long (87 > 79 characters)
+./Scripts/energy_management.py:100:80: E501 line too long (80 > 79 characters)
+./Scripts/energy_management.py:103:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:108:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:110:27: E128 continuation line under-indented for visual indent
+./Scripts/energy_management.py:120:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:122:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:126:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:129:80: E501 line too long (86 > 79 characters)
+./Scripts/energy_management.py:130:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:133:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:134:80: E501 line too long (105 > 79 characters)
+./Scripts/energy_management.py:137:52: W291 trailing whitespace
+./Scripts/energy_management.py:139:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:143:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:151:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:153:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:157:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:161:80: E501 line too long (95 > 79 characters)
+./Scripts/energy_management.py:162:80: E501 line too long (93 > 79 characters)
+./Scripts/energy_management.py:166:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:168:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:174:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:177:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:179:80: E501 line too long (80 > 79 characters)
+./Scripts/energy_management.py:186:80: E501 line too long (82 > 79 characters)
+./Scripts/energy_management.py:188:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:192:80: E501 line too long (86 > 79 characters)
+./Scripts/energy_management.py:193:80: E501 line too long (98 > 79 characters)
+./Scripts/energy_management.py:194:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:204:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:210:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:235:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:241:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:244:80: E501 line too long (111 > 79 characters)
+./Scripts/energy_management.py:246:80: E501 line too long (108 > 79 characters)
+./Scripts/energy_management.py:249:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:256:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:258:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:259:80: E501 line too long (86 > 79 characters)
+./Scripts/energy_management.py:262:80: E501 line too long (80 > 79 characters)
+./Scripts/energy_management.py:263:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:267:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:272:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:276:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:279:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:293:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:297:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:299:24: E128 continuation line under-indented for visual indent
+./Scripts/energy_management.py:308:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:314:80: E501 line too long (94 > 79 characters)
+./Scripts/energy_management.py:316:80: E501 line too long (82 > 79 characters)
+./Scripts/energy_management.py:320:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:324:80: E501 line too long (95 > 79 characters)
+./Scripts/energy_management.py:325:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:328:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:330:80: E501 line too long (135 > 79 characters)
+./Scripts/energy_management.py:331:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:334:80: E501 line too long (85 > 79 characters)
+./Scripts/energy_management.py:335:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:338:80: E501 line too long (123 > 79 characters)
+./Scripts/energy_management.py:339:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:345:80: E501 line too long (134 > 79 characters)
+./Scripts/energy_management.py:347:80: E501 line too long (93 > 79 characters)
+./Scripts/energy_management.py:349:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:350:80: E501 line too long (93 > 79 characters)
+./Scripts/energy_management.py:352:31: F821 undefined name 'defaultdict'
+./Scripts/energy_management.py:353:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:355:80: E501 line too long (88 > 79 characters)
+./Scripts/energy_management.py:356:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:357:80: E501 line too long (81 > 79 characters)
+./Scripts/energy_management.py:358:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:362:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:367:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:369:80: E501 line too long (103 > 79 characters)
+./Scripts/energy_management.py:370:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:373:80: E501 line too long (82 > 79 characters)
+./Scripts/energy_management.py:374:80: E501 line too long (149 > 79 characters)
+./Scripts/energy_management.py:375:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:377:80: E501 line too long (81 > 79 characters)
+./Scripts/energy_management.py:378:80: E501 line too long (92 > 79 characters)
+./Scripts/energy_management.py:379:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:380:80: E501 line too long (121 > 79 characters)
+./Scripts/energy_management.py:381:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:383:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:393:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:397:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:400:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:403:80: E501 line too long (81 > 79 characters)
+./Scripts/energy_management.py:404:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:408:80: E501 line too long (100 > 79 characters)
+./Scripts/energy_management.py:409:80: E501 line too long (100 > 79 characters)
+./Scripts/energy_management.py:410:80: E501 line too long (102 > 79 characters)
+./Scripts/energy_management.py:412:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:416:80: E501 line too long (99 > 79 characters)
+./Scripts/energy_management.py:417:80: E501 line too long (99 > 79 characters)
+./Scripts/energy_management.py:418:80: E501 line too long (107 > 79 characters)
+./Scripts/energy_management.py:420:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:423:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:426:80: E501 line too long (80 > 79 characters)
+./Scripts/energy_management.py:427:80: E501 line too long (82 > 79 characters)
+./Scripts/energy_management.py:428:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:437:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:441:80: E501 line too long (80 > 79 characters)
+./Scripts/energy_management.py:443:1: W293 blank line contains whitespace
+./Scripts/energy_management.py:452:1: W293 blank line contains whitespace
+./Scripts/engine_lights.py:32:80: E501 line too long (106 > 79 characters)
+./Scripts/engine_lights.py:33:80: E501 line too long (112 > 79 characters)
+./Scripts/engine_lights.py:51:80: E501 line too long (83 > 79 characters)
+./Scripts/engine_lights.py:93:80: E501 line too long (95 > 79 characters)
+./Scripts/engine_lights.py:128:80: E501 line too long (110 > 79 characters)
+./Scripts/engine_lights.py:129:80: E501 line too long (116 > 79 characters)
+./Scripts/engine_lights.py:135:1: W293 blank line contains whitespace
+./Scripts/engine_lights.py:166:80: E501 line too long (100 > 79 characters)
+./Scripts/engine_lights.py:167:80: E501 line too long (91 > 79 characters)
+./Scripts/engine_lights.py:168:80: E501 line too long (103 > 79 characters)
+./Scripts/engine_lights.py:169:80: E501 line too long (93 > 79 characters)
+./Scripts/engine_lights.py:170:80: E501 line too long (133 > 79 characters)
+./Scripts/engine_lights.py:171:80: E501 line too long (80 > 79 characters)
+./Scripts/engine_lights.py:172:80: E501 line too long (86 > 79 characters)
+./Scripts/engine_lights.py:174:80: E501 line too long (85 > 79 characters)
+./Scripts/engine_lights.py:190:80: E501 line too long (85 > 79 characters)
+./Scripts/engine_lights.py:268:80: E501 line too long (92 > 79 characters)
+./Scripts/engine_lights.py:273:1: W293 blank line contains whitespace
+./Scripts/engine_lights.py:281:80: E501 line too long (83 > 79 characters)
+./Scripts/engine_lights.py:295:1: W391 blank line at end of file
+./Scripts/line_management.py:14:80: E501 line too long (88 > 79 characters)
+./Scripts/line_management.py:30:1: W293 blank line contains whitespace
+./Scripts/line_management.py:35:1: W293 blank line contains whitespace
+./Scripts/line_management.py:53:1: W293 blank line contains whitespace
+./Scripts/line_management.py:58:1: W293 blank line contains whitespace
+./Scripts/line_management.py:61:1: W293 blank line contains whitespace
+./Scripts/line_management.py:75:80: E501 line too long (113 > 79 characters)
+./Scripts/line_management.py:78:1: W293 blank line contains whitespace
+./Scripts/line_management.py:91:1: W293 blank line contains whitespace
+./Scripts/line_management.py:105:1: W293 blank line contains whitespace
+./Scripts/line_management.py:107:1: W293 blank line contains whitespace
+./Scripts/line_management.py:111:1: W293 blank line contains whitespace
+./Scripts/line_management.py:115:1: W293 blank line contains whitespace
+./Scripts/line_management.py:116:80: E501 line too long (114 > 79 characters)
+./Scripts/line_management.py:124:80: E501 line too long (83 > 79 characters)
+./Scripts/line_management.py:126:1: W293 blank line contains whitespace
+./Scripts/line_management.py:127:66: W291 trailing whitespace
+./Scripts/line_management.py:128:32: E128 continuation line under-indented for visual indent
+./Scripts/line_management.py:128:61: W291 trailing whitespace
+./Scripts/line_management.py:129:32: E128 continuation line under-indented for visual indent
+./Scripts/line_management.py:132:1: W293 blank line contains whitespace
+./Scripts/line_management.py:138:1: W293 blank line contains whitespace
+./Scripts/line_management.py:143:1: W293 blank line contains whitespace
+./Scripts/line_management.py:149:80: E501 line too long (88 > 79 characters)
+./Scripts/line_management.py:150:1: W293 blank line contains whitespace
+./Scripts/line_management.py:156:1: W293 blank line contains whitespace
+./Scripts/line_management.py:165:1: W293 blank line contains whitespace
+./Scripts/line_management.py:166:80: E501 line too long (88 > 79 characters)
+./Scripts/line_management.py:170:80: E501 line too long (96 > 79 characters)
+./Scripts/line_management.py:171:1: W293 blank line contains whitespace
+./Scripts/line_management.py:174:80: E501 line too long (85 > 79 characters)
+./Scripts/line_management.py:175:80: E501 line too long (106 > 79 characters)
+./Scripts/line_management.py:176:1: W293 blank line contains whitespace
+./Scripts/line_management.py:178:80: E501 line too long (87 > 79 characters)
+./Scripts/line_management.py:182:1: W293 blank line contains whitespace
+./Scripts/line_management.py:183:80: E501 line too long (85 > 79 characters)
+./Scripts/line_management.py:186:1: W293 blank line contains whitespace
+./Scripts/line_management.py:187:80: E501 line too long (80 > 79 characters)
+./Scripts/line_management.py:194:1: W293 blank line contains whitespace
+./Scripts/line_management.py:199:1: W293 blank line contains whitespace
+./Scripts/line_management.py:200:80: E501 line too long (92 > 79 characters)
+./Scripts/line_management.py:201:80: E501 line too long (103 > 79 characters)
+./Scripts/line_management.py:202:1: W293 blank line contains whitespace
+./Scripts/line_management.py:204:1: W293 blank line contains whitespace
+./Scripts/line_management.py:210:1: W293 blank line contains whitespace
+./Scripts/line_management.py:211:80: E501 line too long (83 > 79 characters)
+./Scripts/line_management.py:212:1: W293 blank line contains whitespace
+./Scripts/line_management.py:214:80: E501 line too long (102 > 79 characters)
+./Scripts/line_management.py:216:1: W293 blank line contains whitespace
+./Scripts/line_management.py:218:80: E501 line too long (109 > 79 characters)
+./Scripts/line_management.py:220:1: W293 blank line contains whitespace
+./Scripts/line_management.py:225:1: W293 blank line contains whitespace
+./Scripts/line_management.py:227:80: E501 line too long (132 > 79 characters)
+./Scripts/line_management.py:228:1: W293 blank line contains whitespace
+./Scripts/line_management.py:234:80: E501 line too long (92 > 79 characters)
+./Scripts/line_management.py:245:1: W293 blank line contains whitespace
+./Scripts/line_management.py:250:1: W293 blank line contains whitespace
+./Scripts/line_management.py:255:1: W293 blank line contains whitespace
+./Scripts/line_management.py:263:1: W293 blank line contains whitespace
+./Scripts/line_management.py:270:1: W293 blank line contains whitespace
+./Scripts/line_management.py:277:1: W293 blank line contains whitespace
+./Scripts/line_management.py:283:80: E501 line too long (102 > 79 characters)
+./Scripts/line_management.py:284:1: W293 blank line contains whitespace
+./Scripts/line_management.py:294:80: E501 line too long (82 > 79 characters)
+./Scripts/line_management.py:295:1: W293 blank line contains whitespace
+./Scripts/line_management.py:303:1: W391 blank line at end of file
+./Scripts/mobile_api.py:14:1: F401 'typing.List' imported but unused
+./Scripts/mobile_api.py:14:1: F401 'typing.Optional' imported but unused
+./Scripts/mobile_api.py:16:1: F401 'hashlib' imported but unused
+./Scripts/mobile_api.py:17:1: F401 'fastapi.Header' imported but unused
+./Scripts/mobile_api.py:45:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:54:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:68:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:73:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:80:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:83:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:90:80: E501 line too long (95 > 79 characters)
+./Scripts/mobile_api.py:94:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:99:80: E501 line too long (88 > 79 characters)
+./Scripts/mobile_api.py:103:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:107:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:111:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:112:80: E501 line too long (109 > 79 characters)
+./Scripts/mobile_api.py:115:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:121:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:126:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:131:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:132:80: E501 line too long (84 > 79 characters)
+./Scripts/mobile_api.py:136:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:142:80: E501 line too long (80 > 79 characters)
+./Scripts/mobile_api.py:144:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:147:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:149:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:154:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:158:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:160:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:163:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:174:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:184:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:187:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:190:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:197:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:199:80: E501 line too long (81 > 79 characters)
+./Scripts/mobile_api.py:201:80: E501 line too long (82 > 79 characters)
+./Scripts/mobile_api.py:203:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:234:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:236:80: E501 line too long (83 > 79 characters)
+./Scripts/mobile_api.py:243:80: E501 line too long (80 > 79 characters)
+./Scripts/mobile_api.py:254:80: E501 line too long (85 > 79 characters)
+./Scripts/mobile_api.py:272:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:278:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:280:80: E501 line too long (107 > 79 characters)
+./Scripts/mobile_api.py:290:80: E501 line too long (87 > 79 characters)
+./Scripts/mobile_api.py:291:80: E501 line too long (115 > 79 characters)
+./Scripts/mobile_api.py:292:80: E501 line too long (93 > 79 characters)
+./Scripts/mobile_api.py:304:80: E501 line too long (98 > 79 characters)
+./Scripts/mobile_api.py:305:80: E501 line too long (100 > 79 characters)
+./Scripts/mobile_api.py:306:80: E501 line too long (106 > 79 characters)
+./Scripts/mobile_api.py:311:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:313:80: E501 line too long (80 > 79 characters)
+./Scripts/mobile_api.py:314:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:320:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:322:80: E501 line too long (83 > 79 characters)
+./Scripts/mobile_api.py:327:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:335:80: E501 line too long (94 > 79 characters)
+./Scripts/mobile_api.py:338:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:345:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:347:80: E501 line too long (81 > 79 characters)
+./Scripts/mobile_api.py:351:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:361:80: E501 line too long (124 > 79 characters)
+./Scripts/mobile_api.py:363:80: E501 line too long (84 > 79 characters)
+./Scripts/mobile_api.py:366:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:372:80: E501 line too long (110 > 79 characters)
+./Scripts/mobile_api.py:374:80: E501 line too long (80 > 79 characters)
+./Scripts/mobile_api.py:377:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:384:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:386:80: E501 line too long (86 > 79 characters)
+./Scripts/mobile_api.py:392:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:394:80: E501 line too long (108 > 79 characters)
+./Scripts/mobile_api.py:399:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:405:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:407:80: E501 line too long (84 > 79 characters)
+./Scripts/mobile_api.py:418:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:423:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:425:80: E501 line too long (104 > 79 characters)
+./Scripts/mobile_api.py:429:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:433:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:439:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:441:80: E501 line too long (80 > 79 characters)
+./Scripts/mobile_api.py:464:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:468:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:473:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:484:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:488:80: E501 line too long (87 > 79 characters)
+./Scripts/mobile_api.py:489:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:490:80: E501 line too long (98 > 79 characters)
+./Scripts/mobile_api.py:491:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:497:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:504:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:507:80: E501 line too long (105 > 79 characters)
+./Scripts/mobile_api.py:508:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:510:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:511:79: W291 trailing whitespace
+./Scripts/mobile_api.py:512:33: E128 continuation line under-indented for visual indent
+./Scripts/mobile_api.py:512:65: W291 trailing whitespace
+./Scripts/mobile_api.py:513:33: E128 continuation line under-indented for visual indent
+./Scripts/mobile_api.py:516:80: E501 line too long (81 > 79 characters)
+./Scripts/mobile_api.py:518:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:524:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:533:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:536:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:537:69: W291 trailing whitespace
+./Scripts/mobile_api.py:538:37: E128 continuation line under-indented for visual indent
+./Scripts/mobile_api.py:539:37: E128 continuation line under-indented for visual indent
+./Scripts/mobile_api.py:539:48: E251 unexpected spaces around keyword / parameter equals
+./Scripts/mobile_api.py:539:50: E251 unexpected spaces around keyword / parameter equals
+./Scripts/mobile_api.py:542:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:547:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:548:80: E501 line too long (89 > 79 characters)
+./Scripts/mobile_api.py:550:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:559:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:563:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:566:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:573:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:576:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:580:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:585:80: E501 line too long (97 > 79 characters)
+./Scripts/mobile_api.py:588:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:592:80: E501 line too long (90 > 79 characters)
+./Scripts/mobile_api.py:595:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:598:1: W293 blank line contains whitespace
+./Scripts/mobile_api.py:605:1: W293 blank line contains whitespace
+./Scripts/monorail_controller.py:8:1: F401 'logging' imported but unused
+./Scripts/monorail_controller.py:9:1: F401 'enum.Enum' imported but unused
+./Scripts/monorail_controller.py:10:1: F401 'dataclasses.dataclass' imported but unused
+./Scripts/monorail_controller.py:13:1: E302 expected 2 blank lines, found 1
+./Scripts/monorail_controller.py:15:1: W293 blank line contains whitespace
+./Scripts/monorail_controller.py:22:1: W293 blank line contains whitespace
+./Scripts/monorail_controller.py:26:1: W293 blank line contains whitespace
+./Scripts/monorail_controller.py:37:1: E305 expected 2 blank lines after class or function definition, found 1
+./Scripts/monorail_controller.py:38:17: F821 undefined name 'main'
+./Scripts/monorail_controller.py:40:1: W391 blank line at end of file
+./Scripts/monorail_fleet.py:10:1: F401 'typing.List' imported but unused
+./Scripts/monorail_fleet.py:12:80: E501 line too long (88 > 79 characters)
+./Scripts/monorail_fleet.py:14:1: E302 expected 2 blank lines, found 1
+./Scripts/monorail_fleet.py:20:1: E302 expected 2 blank lines, found 1
+./Scripts/monorail_fleet.py:31:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:32:1: E302 expected 2 blank lines, found 1
+./Scripts/monorail_fleet.py:34:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:38:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:43:80: E501 line too long (82 > 79 characters)
+./Scripts/monorail_fleet.py:49:80: E501 line too long (80 > 79 characters)
+./Scripts/monorail_fleet.py:55:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:64:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:65:80: E501 line too long (91 > 79 characters)
+./Scripts/monorail_fleet.py:66:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:70:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:74:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:78:56: W291 trailing whitespace
+./Scripts/monorail_fleet.py:81:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:87:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:92:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:96:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:104:80: E501 line too long (235 > 79 characters)
+./Scripts/monorail_fleet.py:110:80: E501 line too long (88 > 79 characters)
+./Scripts/monorail_fleet.py:127:80: E501 line too long (93 > 79 characters)
+./Scripts/monorail_fleet.py:133:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:139:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:144:80: E501 line too long (107 > 79 characters)
+./Scripts/monorail_fleet.py:150:80: E501 line too long (96 > 79 characters)
+./Scripts/monorail_fleet.py:204:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:207:1: E302 expected 2 blank lines, found 1
+./Scripts/monorail_fleet.py:210:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:214:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:218:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:224:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:229:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:234:80: E501 line too long (81 > 79 characters)
+./Scripts/monorail_fleet.py:235:1: W293 blank line contains whitespace
+./Scripts/monorail_fleet.py:244:1: W391 blank line at end of file
+./Scripts/passenger_flow.py:13:1: F401 'datetime.time' imported but unused
+./Scripts/passenger_flow.py:14:1: F401 'typing.Optional' imported but unused
+./Scripts/passenger_flow.py:14:1: F401 'typing.Tuple' imported but unused
+./Scripts/passenger_flow.py:15:1: F401 'numpy as np' imported but unused
+./Scripts/passenger_flow.py:16:1: F401 'pandas as pd' imported but unused
+./Scripts/passenger_flow.py:33:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:34:58: W291 trailing whitespace
+./Scripts/passenger_flow.py:40:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:44:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:48:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:56:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:69:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:74:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:81:80: E501 line too long (90 > 79 characters)
+./Scripts/passenger_flow.py:82:80: E501 line too long (83 > 79 characters)
+./Scripts/passenger_flow.py:85:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:90:80: E501 line too long (82 > 79 characters)
+./Scripts/passenger_flow.py:94:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:99:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:100:60: W291 trailing whitespace
+./Scripts/passenger_flow.py:101:40: E128 continuation line under-indented for visual indent
+./Scripts/passenger_flow.py:104:47: W291 trailing whitespace
+./Scripts/passenger_flow.py:106:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:110:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:114:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:120:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:122:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:127:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:131:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:137:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:139:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:144:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:149:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:152:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:159:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:161:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:168:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:171:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:174:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:176:80: E501 line too long (92 > 79 characters)
+./Scripts/passenger_flow.py:178:80: E501 line too long (81 > 79 characters)
+./Scripts/passenger_flow.py:179:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:185:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:194:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:200:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:203:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:206:80: E501 line too long (85 > 79 characters)
+./Scripts/passenger_flow.py:207:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:208:80: E501 line too long (85 > 79 characters)
+./Scripts/passenger_flow.py:215:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:219:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:221:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:223:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:227:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:234:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:236:80: E501 line too long (89 > 79 characters)
+./Scripts/passenger_flow.py:237:80: E501 line too long (91 > 79 characters)
+./Scripts/passenger_flow.py:238:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:241:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:249:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:255:80: E501 line too long (100 > 79 characters)
+./Scripts/passenger_flow.py:257:80: E501 line too long (102 > 79 characters)
+./Scripts/passenger_flow.py:258:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:260:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:269:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:274:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:292:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:297:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:298:80: E501 line too long (88 > 79 characters)
+./Scripts/passenger_flow.py:308:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:312:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:316:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:319:27: E128 continuation line under-indented for visual indent
+./Scripts/passenger_flow.py:319:80: E501 line too long (80 > 79 characters)
+./Scripts/passenger_flow.py:320:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:325:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:328:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:336:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:348:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:350:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:363:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:367:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:373:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:377:80: E501 line too long (111 > 79 characters)
+./Scripts/passenger_flow.py:378:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:381:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:383:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:393:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:397:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:400:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:403:80: E501 line too long (81 > 79 characters)
+./Scripts/passenger_flow.py:404:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:412:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:421:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:429:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:436:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:439:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:445:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:451:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:454:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:459:1: W293 blank line contains whitespace
+./Scripts/passenger_flow.py:461:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:17:1: F401 'pandas as pd' imported but unused
+./Scripts/predictive_maintenance.py:38:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:39:64: W291 trailing whitespace
+./Scripts/predictive_maintenance.py:40:64: W291 trailing whitespace
+./Scripts/predictive_maintenance.py:43:80: E501 line too long (91 > 79 characters)
+./Scripts/predictive_maintenance.py:45:80: E501 line too long (90 > 79 characters)
+./Scripts/predictive_maintenance.py:49:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:76:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:91:41: E261 at least two spaces before inline comment
+./Scripts/predictive_maintenance.py:95:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:103:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:106:80: E501 line too long (104 > 79 characters)
+./Scripts/predictive_maintenance.py:109:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:117:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:121:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:130:80: E501 line too long (80 > 79 characters)
+./Scripts/predictive_maintenance.py:132:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:138:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:146:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:157:80: E501 line too long (83 > 79 characters)
+./Scripts/predictive_maintenance.py:161:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:168:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:174:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:181:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:182:80: E501 line too long (83 > 79 characters)
+./Scripts/predictive_maintenance.py:185:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:189:80: E501 line too long (82 > 79 characters)
+./Scripts/predictive_maintenance.py:191:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:192:80: E501 line too long (86 > 79 characters)
+./Scripts/predictive_maintenance.py:195:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:201:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:204:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:208:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:213:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:218:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:227:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:231:80: E501 line too long (88 > 79 characters)
+./Scripts/predictive_maintenance.py:232:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:233:80: E501 line too long (92 > 79 characters)
+./Scripts/predictive_maintenance.py:235:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:239:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:244:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:248:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:254:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:258:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:259:80: E501 line too long (85 > 79 characters)
+./Scripts/predictive_maintenance.py:264:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:267:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:269:80: E501 line too long (92 > 79 characters)
+./Scripts/predictive_maintenance.py:270:30: E128 continuation line under-indented for visual indent
+./Scripts/predictive_maintenance.py:270:80: E501 line too long (89 > 79 characters)
+./Scripts/predictive_maintenance.py:272:80: E501 line too long (87 > 79 characters)
+./Scripts/predictive_maintenance.py:276:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:282:80: E501 line too long (83 > 79 characters)
+./Scripts/predictive_maintenance.py:283:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:293:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:294:80: E501 line too long (88 > 79 characters)
+./Scripts/predictive_maintenance.py:295:80: E501 line too long (90 > 79 characters)
+./Scripts/predictive_maintenance.py:296:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:299:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:301:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:307:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:310:80: E501 line too long (100 > 79 characters)
+./Scripts/predictive_maintenance.py:311:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:315:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:317:80: E501 line too long (84 > 79 characters)
+./Scripts/predictive_maintenance.py:318:22: E128 continuation line under-indented for visual indent
+./Scripts/predictive_maintenance.py:318:80: E501 line too long (81 > 79 characters)
+./Scripts/predictive_maintenance.py:324:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:332:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:333:80: E501 line too long (82 > 79 characters)
+./Scripts/predictive_maintenance.py:335:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:341:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:346:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:363:80: E501 line too long (93 > 79 characters)
+./Scripts/predictive_maintenance.py:364:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:366:80: E501 line too long (88 > 79 characters)
+./Scripts/predictive_maintenance.py:370:80: E501 line too long (100 > 79 characters)
+./Scripts/predictive_maintenance.py:371:80: E501 line too long (90 > 79 characters)
+./Scripts/predictive_maintenance.py:373:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:378:80: E501 line too long (100 > 79 characters)
+./Scripts/predictive_maintenance.py:379:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:382:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:388:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:394:80: E501 line too long (107 > 79 characters)
+./Scripts/predictive_maintenance.py:402:80: E501 line too long (80 > 79 characters)
+./Scripts/predictive_maintenance.py:411:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:415:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:421:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:423:80: E501 line too long (112 > 79 characters)
+./Scripts/predictive_maintenance.py:425:80: E501 line too long (95 > 79 characters)
+./Scripts/predictive_maintenance.py:426:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:428:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:438:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:442:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:471:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:474:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:478:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:484:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:487:1: W293 blank line contains whitespace
+./Scripts/predictive_maintenance.py:492:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:11:1: F401 'json' imported but unused
+./Scripts/raspberry_pi_dashboard.py:12:1: F401 'os' imported but unused
+./Scripts/raspberry_pi_dashboard.py:30:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_dashboard.py:32:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:36:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:47:80: E501 line too long (84 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:48:80: E501 line too long (98 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:49:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:56:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:62:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:64:80: E501 line too long (83 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:66:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:69:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:73:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:80:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:87:9: E722 do not use bare 'except'
+./Scripts/raspberry_pi_dashboard.py:89:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:107:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:111:80: E501 line too long (83 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:113:80: E501 line too long (81 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:118:80: E501 line too long (99 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:120:13: E722 do not use bare 'except'
+./Scripts/raspberry_pi_dashboard.py:123:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:129:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_dashboard.py:131:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:142:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:148:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:153:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:155:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:162:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:167:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:170:32: W291 trailing whitespace
+./Scripts/raspberry_pi_dashboard.py:171:33: W291 trailing whitespace
+./Scripts/raspberry_pi_dashboard.py:172:44: W291 trailing whitespace
+./Scripts/raspberry_pi_dashboard.py:176:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:179:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:181:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:184:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:195:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:198:64: W291 trailing whitespace
+./Scripts/raspberry_pi_dashboard.py:203:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:207:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:212:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:219:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:224:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:225:80: E501 line too long (110 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:231:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:243:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_dashboard.py:245:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:251:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:255:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:258:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:262:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:266:28: W291 trailing whitespace
+./Scripts/raspberry_pi_dashboard.py:270:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:273:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:275:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:281:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:284:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:289:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:294:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:297:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:300:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:303:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:308:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:312:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:317:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:330:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:333:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:340:13: F841 local variable 'speed' is assigned to but never used
+./Scripts/raspberry_pi_dashboard.py:342:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:348:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:353:80: E501 line too long (84 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:355:80: E501 line too long (81 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:357:80: E501 line too long (80 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:358:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:360:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:363:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:376:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:385:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:393:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:395:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:398:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:406:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:409:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:413:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:417:80: E501 line too long (111 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:422:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:428:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:432:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_dashboard.py:435:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:439:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:444:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:445:80: E501 line too long (97 > 79 characters)
+./Scripts/raspberry_pi_dashboard.py:447:13: F401 'time' imported but unused
+./Scripts/raspberry_pi_dashboard.py:457:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:461:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:464:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:466:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_dashboard.py:469:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:10:1: F401 'typing.Optional' imported but unused
+./Scripts/raspberry_pi_integration.py:10:1: F401 'typing.List' imported but unused
+./Scripts/raspberry_pi_integration.py:13:80: E501 line too long (88 > 79 characters)
+./Scripts/raspberry_pi_integration.py:16:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_integration.py:19:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:22:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:26:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:29:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:33:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_integration.py:38:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_integration.py:46:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_integration.py:48:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:56:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:62:80: E501 line too long (82 > 79 characters)
+./Scripts/raspberry_pi_integration.py:63:80: E501 line too long (80 > 79 characters)
+./Scripts/raspberry_pi_integration.py:64:80: E501 line too long (81 > 79 characters)
+./Scripts/raspberry_pi_integration.py:66:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:79:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:88:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:92:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:100:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:104:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:105:80: E501 line too long (81 > 79 characters)
+./Scripts/raspberry_pi_integration.py:106:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:107:80: E501 line too long (92 > 79 characters)
+./Scripts/raspberry_pi_integration.py:116:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:120:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:131:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:134:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:137:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:142:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:147:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:153:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:157:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:160:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:166:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:187:1: E302 expected 2 blank lines, found 1
+./Scripts/raspberry_pi_integration.py:192:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:194:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:197:80: E501 line too long (80 > 79 characters)
+./Scripts/raspberry_pi_integration.py:199:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:205:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:210:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:214:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:221:1: W293 blank line contains whitespace
+./Scripts/raspberry_pi_integration.py:228:1: W391 blank line at end of file
+./Scripts/sensor_coverage_validator.py:12:1: F401 'typing.List' imported but unused
+./Scripts/sensor_coverage_validator.py:14:1: E302 expected 2 blank lines, found 1
+./Scripts/sensor_coverage_validator.py:38:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:44:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:53:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:57:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:61:80: E501 line too long (115 > 79 characters)
+./Scripts/sensor_coverage_validator.py:64:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:71:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:72:80: E501 line too long (93 > 79 characters)
+./Scripts/sensor_coverage_validator.py:75:80: E501 line too long (93 > 79 characters)
+./Scripts/sensor_coverage_validator.py:77:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:79:80: E501 line too long (92 > 79 characters)
+./Scripts/sensor_coverage_validator.py:82:80: E501 line too long (82 > 79 characters)
+./Scripts/sensor_coverage_validator.py:87:80: E501 line too long (109 > 79 characters)
+./Scripts/sensor_coverage_validator.py:89:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:91:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:95:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:97:80: E501 line too long (85 > 79 characters)
+./Scripts/sensor_coverage_validator.py:98:80: E501 line too long (98 > 79 characters)
+./Scripts/sensor_coverage_validator.py:101:80: E501 line too long (90 > 79 characters)
+./Scripts/sensor_coverage_validator.py:103:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:105:80: E501 line too long (106 > 79 characters)
+./Scripts/sensor_coverage_validator.py:106:80: E501 line too long (89 > 79 characters)
+./Scripts/sensor_coverage_validator.py:109:80: E501 line too long (82 > 79 characters)
+./Scripts/sensor_coverage_validator.py:111:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:112:80: E501 line too long (85 > 79 characters)
+./Scripts/sensor_coverage_validator.py:113:80: E501 line too long (111 > 79 characters)
+./Scripts/sensor_coverage_validator.py:114:80: E501 line too long (85 > 79 characters)
+./Scripts/sensor_coverage_validator.py:116:80: E501 line too long (88 > 79 characters)
+./Scripts/sensor_coverage_validator.py:122:80: E501 line too long (84 > 79 characters)
+./Scripts/sensor_coverage_validator.py:124:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:131:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:135:80: E501 line too long (90 > 79 characters)
+./Scripts/sensor_coverage_validator.py:139:80: E501 line too long (89 > 79 characters)
+./Scripts/sensor_coverage_validator.py:141:80: E501 line too long (80 > 79 characters)
+./Scripts/sensor_coverage_validator.py:143:80: E501 line too long (87 > 79 characters)
+./Scripts/sensor_coverage_validator.py:145:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:149:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:153:80: E501 line too long (87 > 79 characters)
+./Scripts/sensor_coverage_validator.py:155:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:157:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:158:80: E501 line too long (81 > 79 characters)
+./Scripts/sensor_coverage_validator.py:162:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:169:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:174:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:179:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:186:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:191:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:196:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:200:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:204:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:207:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:209:80: E501 line too long (83 > 79 characters)
+./Scripts/sensor_coverage_validator.py:210:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:213:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:215:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:223:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:228:80: E501 line too long (84 > 79 characters)
+./Scripts/sensor_coverage_validator.py:230:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:233:80: E501 line too long (125 > 79 characters)
+./Scripts/sensor_coverage_validator.py:235:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:237:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:242:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:247:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:250:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:256:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:261:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:266:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:271:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:273:80: E501 line too long (80 > 79 characters)
+./Scripts/sensor_coverage_validator.py:275:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:277:80: E501 line too long (84 > 79 characters)
+./Scripts/sensor_coverage_validator.py:278:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:287:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:293:80: E501 line too long (104 > 79 characters)
+./Scripts/sensor_coverage_validator.py:295:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:298:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:301:1: E305 expected 2 blank lines after class or function definition, found 1
+./Scripts/sensor_coverage_validator.py:303:80: E501 line too long (83 > 79 characters)
+./Scripts/sensor_coverage_validator.py:305:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:308:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:312:1: W293 blank line contains whitespace
+./Scripts/sensor_coverage_validator.py:316:1: W391 blank line at end of file
+./Scripts/station_system.py:11:1: F401 'typing.Optional' imported but unused
+./Scripts/station_system.py:14:80: E501 line too long (88 > 79 characters)
+./Scripts/station_system.py:16:1: E302 expected 2 blank lines, found 1
+./Scripts/station_system.py:24:1: E302 expected 2 blank lines, found 1
+./Scripts/station_system.py:32:1: E302 expected 2 blank lines, found 1
+./Scripts/station_system.py:46:1: W293 blank line contains whitespace
+./Scripts/station_system.py:48:1: W293 blank line contains whitespace
+./Scripts/station_system.py:63:1: W293 blank line contains whitespace
+./Scripts/station_system.py:75:1: W293 blank line contains whitespace
+./Scripts/station_system.py:83:1: W293 blank line contains whitespace
+./Scripts/station_system.py:86:1: W293 blank line contains whitespace
+./Scripts/station_system.py:87:80: E501 line too long (101 > 79 characters)
+./Scripts/station_system.py:91:1: W293 blank line contains whitespace
+./Scripts/station_system.py:95:1: W293 blank line contains whitespace
+./Scripts/station_system.py:113:1: E302 expected 2 blank lines, found 1
+./Scripts/station_system.py:115:1: W293 blank line contains whitespace
+./Scripts/station_system.py:117:1: W293 blank line contains whitespace
+./Scripts/station_system.py:120:1: W293 blank line contains whitespace
+./Scripts/station_system.py:124:1: W293 blank line contains whitespace
+./Scripts/station_system.py:127:1: W293 blank line contains whitespace
+./Scripts/station_system.py:130:1: W293 blank line contains whitespace
+./Scripts/station_system.py:133:1: W293 blank line contains whitespace
+./Scripts/station_system.py:136:1: W293 blank line contains whitespace
+./Scripts/station_system.py:140:1: W293 blank line contains whitespace
+./Scripts/station_system.py:146:1: W391 blank line at end of file
+./Scripts/weather_adaptation.py:13:1: F401 'datetime.timedelta' imported but unused
+./Scripts/weather_adaptation.py:31:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:32:60: W291 trailing whitespace
+./Scripts/weather_adaptation.py:44:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:54:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:67:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:80:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:97:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:104:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:111:80: E501 line too long (89 > 79 characters)
+./Scripts/weather_adaptation.py:114:80: E501 line too long (82 > 79 characters)
+./Scripts/weather_adaptation.py:117:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:122:80: E501 line too long (83 > 79 characters)
+./Scripts/weather_adaptation.py:126:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:131:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:134:80: E501 line too long (80 > 79 characters)
+./Scripts/weather_adaptation.py:135:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:146:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:149:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:153:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:156:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:161:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:163:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:170:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:174:80: E501 line too long (92 > 79 characters)
+./Scripts/weather_adaptation.py:175:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:178:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:197:80: E501 line too long (84 > 79 characters)
+./Scripts/weather_adaptation.py:198:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:207:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:212:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:215:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:237:80: E501 line too long (81 > 79 characters)
+./Scripts/weather_adaptation.py:245:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:251:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:256:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:258:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:284:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:288:80: E501 line too long (83 > 79 characters)
+./Scripts/weather_adaptation.py:294:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:298:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:303:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:306:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:308:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:312:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:317:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:320:80: E501 line too long (95 > 79 characters)
+./Scripts/weather_adaptation.py:321:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:328:80: E501 line too long (168 > 79 characters)
+./Scripts/weather_adaptation.py:332:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:334:80: E501 line too long (87 > 79 characters)
+./Scripts/weather_adaptation.py:336:80: E501 line too long (101 > 79 characters)
+./Scripts/weather_adaptation.py:337:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:339:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:343:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:347:80: E501 line too long (81 > 79 characters)
+./Scripts/weather_adaptation.py:348:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:351:80: E501 line too long (90 > 79 characters)
+./Scripts/weather_adaptation.py:352:80: E501 line too long (88 > 79 characters)
+./Scripts/weather_adaptation.py:357:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:361:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:366:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:369:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:375:80: E501 line too long (106 > 79 characters)
+./Scripts/weather_adaptation.py:376:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:384:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:389:80: E501 line too long (109 > 79 characters)
+./Scripts/weather_adaptation.py:392:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:396:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:398:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:403:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:406:80: E501 line too long (83 > 79 characters)
+./Scripts/weather_adaptation.py:409:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:412:80: E501 line too long (87 > 79 characters)
+./Scripts/weather_adaptation.py:413:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:424:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:429:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:440:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:443:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:448:80: E501 line too long (80 > 79 characters)
+./Scripts/weather_adaptation.py:449:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:455:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:458:17: F541 f-string is missing placeholders
+./Scripts/weather_adaptation.py:461:80: E501 line too long (85 > 79 characters)
+./Scripts/weather_adaptation.py:463:21: F541 f-string is missing placeholders
+./Scripts/weather_adaptation.py:464:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:467:17: F541 f-string is missing placeholders
+./Scripts/weather_adaptation.py:470:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:473:17: F541 f-string is missing placeholders
+./Scripts/weather_adaptation.py:474:80: E501 line too long (80 > 79 characters)
+./Scripts/weather_adaptation.py:476:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:479:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:491:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:494:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:497:80: E501 line too long (86 > 79 characters)
+./Scripts/weather_adaptation.py:498:80: E501 line too long (81 > 79 characters)
+./Scripts/weather_adaptation.py:499:80: E501 line too long (92 > 79 characters)
+./Scripts/weather_adaptation.py:500:1: W293 blank line contains whitespace
+./Scripts/weather_adaptation.py:502:17: F541 f-string is missing placeholders
+./cad_file_validator.py:13:1: F401 'pathlib.Path' imported but unused
+./cad_file_validator.py:15:1: E302 expected 2 blank lines, found 1
+./cad_file_validator.py:22:80: E501 line too long (86 > 79 characters)
+./cad_file_validator.py:42:80: E501 line too long (100 > 79 characters)
+./cad_file_validator.py:64:1: W293 blank line contains whitespace
+./cad_file_validator.py:71:1: W293 blank line contains whitespace
+./cad_file_validator.py:78:1: W293 blank line contains whitespace
+./cad_file_validator.py:81:80: E501 line too long (82 > 79 characters)
+./cad_file_validator.py:86:1: W293 blank line contains whitespace
+./cad_file_validator.py:90:80: E501 line too long (86 > 79 characters)
+./cad_file_validator.py:93:80: E501 line too long (108 > 79 characters)
+./cad_file_validator.py:95:80: E501 line too long (84 > 79 characters)
+./cad_file_validator.py:96:1: W293 blank line contains whitespace
+./cad_file_validator.py:101:1: W293 blank line contains whitespace
+./cad_file_validator.py:103:1: W293 blank line contains whitespace
+./cad_file_validator.py:104:9: F841 local variable 'e' is assigned to but never used
+./cad_file_validator.py:106:1: W293 blank line contains whitespace
+./cad_file_validator.py:111:1: W293 blank line contains whitespace
+./cad_file_validator.py:115:1: W293 blank line contains whitespace
+./cad_file_validator.py:119:1: W293 blank line contains whitespace
+./cad_file_validator.py:122:80: E501 line too long (115 > 79 characters)
+./cad_file_validator.py:123:1: W293 blank line contains whitespace
+./cad_file_validator.py:125:80: E501 line too long (92 > 79 characters)
+./cad_file_validator.py:126:80: E501 line too long (100 > 79 characters)
+./cad_file_validator.py:128:80: E501 line too long (126 > 79 characters)
+./cad_file_validator.py:130:80: E501 line too long (106 > 79 characters)
+./cad_file_validator.py:132:80: E501 line too long (142 > 79 characters)
+./cad_file_validator.py:132:124: E231 missing whitespace after ','
+./cad_file_validator.py:136:80: E501 line too long (104 > 79 characters)
+./cad_file_validator.py:138:80: E501 line too long (116 > 79 characters)
+./cad_file_validator.py:139:1: W293 blank line contains whitespace
+./cad_file_validator.py:141:80: E501 line too long (125 > 79 characters)
+./cad_file_validator.py:142:1: W293 blank line contains whitespace
+./cad_file_validator.py:144:1: W293 blank line contains whitespace
+./cad_file_validator.py:149:1: W293 blank line contains whitespace
+./cad_file_validator.py:152:1: W293 blank line contains whitespace
+./cad_file_validator.py:155:1: W293 blank line contains whitespace
+./cad_file_validator.py:158:1: W293 blank line contains whitespace
+./cad_file_validator.py:163:80: E501 line too long (116 > 79 characters)
+./cad_file_validator.py:164:1: W293 blank line contains whitespace
+./cad_file_validator.py:165:80: E501 line too long (125 > 79 characters)
+./cad_file_validator.py:167:1: W293 blank line contains whitespace
+./cad_file_validator.py:169:80: E501 line too long (83 > 79 characters)
+./cad_file_validator.py:170:19: F541 f-string is missing placeholders
+./cad_file_validator.py:172:80: E501 line too long (95 > 79 characters)
+./cad_file_validator.py:174:80: E501 line too long (93 > 79 characters)
+./cad_file_validator.py:175:1: W293 blank line contains whitespace
+./cad_file_validator.py:181:80: E501 line too long (142 > 79 characters)
+./cad_file_validator.py:184:1: W293 blank line contains whitespace
+./cad_file_validator.py:187:1: W293 blank line contains whitespace
+./cad_file_validator.py:190:1: E305 expected 2 blank lines after class or function definition, found 1
+./cad_file_validator.py:194:80: E501 line too long (105 > 79 characters)
+./cad_file_validator.py:195:1: W293 blank line contains whitespace
+./cad_file_validator.py:204:1: W391 blank line at end of file
+./sensor_coverage_validator.py:12:1: F401 'typing.List' imported but unused
+./sensor_coverage_validator.py:14:1: E302 expected 2 blank lines, found 1
+./sensor_coverage_validator.py:38:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:44:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:53:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:57:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:61:80: E501 line too long (115 > 79 characters)
+./sensor_coverage_validator.py:64:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:71:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:72:80: E501 line too long (93 > 79 characters)
+./sensor_coverage_validator.py:75:80: E501 line too long (93 > 79 characters)
+./sensor_coverage_validator.py:77:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:79:80: E501 line too long (92 > 79 characters)
+./sensor_coverage_validator.py:82:80: E501 line too long (82 > 79 characters)
+./sensor_coverage_validator.py:87:80: E501 line too long (109 > 79 characters)
+./sensor_coverage_validator.py:89:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:91:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:95:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:97:80: E501 line too long (85 > 79 characters)
+./sensor_coverage_validator.py:98:80: E501 line too long (98 > 79 characters)
+./sensor_coverage_validator.py:101:80: E501 line too long (90 > 79 characters)
+./sensor_coverage_validator.py:103:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:105:80: E501 line too long (106 > 79 characters)
+./sensor_coverage_validator.py:106:80: E501 line too long (89 > 79 characters)
+./sensor_coverage_validator.py:109:80: E501 line too long (82 > 79 characters)
+./sensor_coverage_validator.py:111:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:112:80: E501 line too long (85 > 79 characters)
+./sensor_coverage_validator.py:113:80: E501 line too long (111 > 79 characters)
+./sensor_coverage_validator.py:114:80: E501 line too long (85 > 79 characters)
+./sensor_coverage_validator.py:116:80: E501 line too long (88 > 79 characters)
+./sensor_coverage_validator.py:122:80: E501 line too long (84 > 79 characters)
+./sensor_coverage_validator.py:124:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:131:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:135:80: E501 line too long (90 > 79 characters)
+./sensor_coverage_validator.py:139:80: E501 line too long (89 > 79 characters)
+./sensor_coverage_validator.py:141:80: E501 line too long (80 > 79 characters)
+./sensor_coverage_validator.py:143:80: E501 line too long (87 > 79 characters)
+./sensor_coverage_validator.py:145:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:149:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:153:80: E501 line too long (87 > 79 characters)
+./sensor_coverage_validator.py:155:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:157:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:158:80: E501 line too long (81 > 79 characters)
+./sensor_coverage_validator.py:162:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:169:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:174:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:179:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:186:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:191:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:196:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:200:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:204:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:207:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:209:80: E501 line too long (83 > 79 characters)
+./sensor_coverage_validator.py:210:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:213:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:215:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:223:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:228:80: E501 line too long (84 > 79 characters)
+./sensor_coverage_validator.py:230:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:233:80: E501 line too long (125 > 79 characters)
+./sensor_coverage_validator.py:235:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:237:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:242:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:247:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:250:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:256:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:261:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:266:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:271:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:273:80: E501 line too long (80 > 79 characters)
+./sensor_coverage_validator.py:275:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:277:80: E501 line too long (84 > 79 characters)
+./sensor_coverage_validator.py:278:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:287:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:293:80: E501 line too long (104 > 79 characters)
+./sensor_coverage_validator.py:295:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:298:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:301:1: E305 expected 2 blank lines after class or function definition, found 1
+./sensor_coverage_validator.py:303:80: E501 line too long (83 > 79 characters)
+./sensor_coverage_validator.py:305:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:308:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:312:1: W293 blank line contains whitespace
+./sensor_coverage_validator.py:316:1: W391 blank line at end of file
+./sensor_system/system_wide_sensor_framework.py:13:80: E501 line too long (88 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:44:80: E501 line too long (87 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:53:80: E501 line too long (87 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:62:80: E501 line too long (83 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:71:80: E501 line too long (83 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:80:80: E501 line too long (105 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:89:80: E501 line too long (93 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:98:80: E501 line too long (93 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:109:80: E501 line too long (83 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:118:80: E501 line too long (84 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:127:80: E501 line too long (82 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:147:80: E501 line too long (82 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:181:1: E302 expected 2 blank lines, found 1
+./sensor_system/system_wide_sensor_framework.py:183:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:192:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:193:80: E501 line too long (96 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:194:24: E128 continuation line under-indented for visual indent
+./sensor_system/system_wide_sensor_framework.py:194:80: E501 line too long (102 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:204:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:210:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:212:80: E501 line too long (93 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:214:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:217:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:218:80: E501 line too long (89 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:219:30: E128 continuation line under-indented for visual indent
+./sensor_system/system_wide_sensor_framework.py:224:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:227:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:235:80: E501 line too long (80 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:237:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:240:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:241:80: E501 line too long (102 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:242:23: E128 continuation line under-indented for visual indent
+./sensor_system/system_wide_sensor_framework.py:250:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:252:80: E501 line too long (80 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:254:80: E501 line too long (82 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:255:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:262:80: E501 line too long (92 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:264:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:267:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:268:80: E501 line too long (89 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:269:30: E128 continuation line under-indented for visual indent
+./sensor_system/system_wide_sensor_framework.py:274:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:277:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:285:80: E501 line too long (80 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:287:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:290:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:295:80: E501 line too long (91 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:298:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:305:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:307:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:308:80: E501 line too long (88 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:317:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:319:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:320:80: E501 line too long (86 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:325:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:328:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:336:80: E501 line too long (80 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:338:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:341:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:342:80: E501 line too long (88 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:346:80: E501 line too long (115 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:349:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:352:80: E501 line too long (101 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:353:80: E501 line too long (110 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:355:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:359:80: E501 line too long (87 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:360:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:362:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:363:80: E501 line too long (94 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:368:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:371:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:379:80: E501 line too long (80 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:381:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:384:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:385:80: E501 line too long (87 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:389:80: E501 line too long (94 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:394:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:407:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:415:80: E501 line too long (95 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:421:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:424:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:426:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:429:80: E501 line too long (90 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:430:80: E501 line too long (101 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:431:80: E501 line too long (101 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:432:80: E501 line too long (99 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:434:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:441:80: E501 line too long (83 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:443:80: E501 line too long (101 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:445:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:448:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:450:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:451:80: E501 line too long (95 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:454:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:474:80: E501 line too long (90 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:476:80: E501 line too long (88 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:483:80: E501 line too long (101 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:484:80: E501 line too long (81 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:494:80: E501 line too long (84 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:501:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:503:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:504:80: E501 line too long (102 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:508:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:526:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:528:80: E501 line too long (81 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:531:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:534:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:542:80: E501 line too long (107 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:546:80: E501 line too long (93 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:561:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:565:80: E501 line too long (100 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:566:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:569:1: E302 expected 2 blank lines, found 1
+./sensor_system/system_wide_sensor_framework.py:573:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:576:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:584:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:588:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:592:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:597:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:600:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:608:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:611:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:614:80: E501 line too long (93 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:615:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:619:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:623:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:627:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:632:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:636:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:639:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:645:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:646:11: F541 f-string is missing placeholders
+./sensor_system/system_wide_sensor_framework.py:650:80: E501 line too long (97 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:651:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:654:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:656:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:658:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:659:80: E501 line too long (91 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:661:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:663:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:664:11: F541 f-string is missing placeholders
+./sensor_system/system_wide_sensor_framework.py:670:1: W293 blank line contains whitespace
+./sensor_system/system_wide_sensor_framework.py:671:11: F541 f-string is missing placeholders
+./sensor_system/system_wide_sensor_framework.py:671:80: E501 line too long (84 > 79 characters)
+./sensor_system/system_wide_sensor_framework.py:672:11: F541 f-string is missing placeholders
+./sensor_system/system_wide_sensor_framework.py:673:11: F541 f-string is missing placeholders
+./sensor_system/system_wide_sensor_framework.py:675:1: E305 expected 2 blank lines after class or function definition, found 1
+./sensor_system/system_wide_sensor_framework.py:678:1: W391 blank line at end of file
+./sensor_system/tests/test_sensor_framework.py:12:1: F401 'datetime.datetime' imported but unused
+./sensor_system/tests/test_sensor_framework.py:17:1: E402 module level import not at top of file
+./sensor_system/tests/test_sensor_framework.py:17:80: E501 line too long (80 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:22:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:27:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:31:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:38:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:45:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:52:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:63:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:66:80: E501 line too long (89 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:67:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:72:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:76:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:81:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:84:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:87:80: E501 line too long (94 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:88:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:92:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:96:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:98:80: E501 line too long (98 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:100:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:104:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:107:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:111:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:115:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:118:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:122:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:126:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:129:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:133:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:136:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:140:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:144:80: E501 line too long (86 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:144:87: W291 trailing whitespace
+./sensor_system/tests/test_sensor_framework.py:145:60: E128 continuation line under-indented for visual indent
+./sensor_system/tests/test_sensor_framework.py:145:80: E501 line too long (93 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:150:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:152:73: W291 trailing whitespace
+./sensor_system/tests/test_sensor_framework.py:153:59: E128 continuation line under-indented for visual indent
+./sensor_system/tests/test_sensor_framework.py:153:80: E501 line too long (89 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:158:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:164:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:167:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:170:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:174:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:182:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:185:80: E501 line too long (80 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:186:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:193:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:195:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:201:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:204:80: E501 line too long (95 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:208:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:213:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:218:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:231:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:234:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:240:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:243:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:246:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:249:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:252:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:257:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:262:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:265:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:268:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:271:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:272:80: E501 line too long (80 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:274:51: W291 trailing whitespace
+./sensor_system/tests/test_sensor_framework.py:275:24: E128 continuation line under-indented for visual indent
+./sensor_system/tests/test_sensor_framework.py:276:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:282:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:286:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:294:80: E501 line too long (92 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:295:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:300:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:304:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:307:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:311:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:316:1: W293 blank line contains whitespace
+./sensor_system/tests/test_sensor_framework.py:319:80: E501 line too long (80 > 79 characters)
+./sensor_system/tests/test_sensor_framework.py:327:1: W391 blank line at end of file
