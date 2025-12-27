@@ -54,7 +54,7 @@ gevent-websocket==0.10.1
 
 # Async and networking
 asyncio==4.0.0
-websockets==14.1
+websockets==15.0.1
 pyserial==3.5
 pyserial-asyncio==0.6
 # paho-mqtt CVE-2024-6786: path traversal - using latest patched version
