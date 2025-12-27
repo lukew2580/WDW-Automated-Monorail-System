@@ -39,6 +39,16 @@ updates:
         applies-to: security-updates
         patterns:
           - "*"
+    automerge:
+      - pattern: "*"
+        strategy: "squash"
+        commit-message:
+          prefix: "chore"
+          include: "scope"
+        rebase-strategy: "auto"
+        require:
+          - "ci-success"
+          - "approving-reviews-count:1"
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
