@@ -1,0 +1,75 @@
+# Auto-merge Dependabot PRs
+# This workflow automatically approves and merges Dependabot PRs for minor/patch updates
+
+name: Dependabot Auto-Merge
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot-auto-merge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Auto-approve patch updates
+        if: steps.metadata.outputs.update-type == 'version-update:semver-patch'
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge patch updates
+        if: steps.metadata.outputs.update-type == 'version-update:semver-patch'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-approve minor updates
+        if: steps.metadata.outputs.update-type == 'version-update:semver-minor'
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge minor updates
+        if: steps.metadata.outputs.update-type == 'version-update:semver-minor'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-approve security updates
+        if: steps.metadata.outputs.dependency-type == 'direct:production' && steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge security updates
+        if: steps.metadata.outputs.dependency-type == 'direct:production' && steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # For major updates, just approve but require manual merge
+      - name: Approve major updates (manual merge required)
+        if: steps.metadata.outputs.update-type == 'version-update:semver-major'
+        run: |
+          gh pr review --approve "$PR_URL" --body "🔔 **Major version update detected.** This PR has been approved but requires manual merge review."
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

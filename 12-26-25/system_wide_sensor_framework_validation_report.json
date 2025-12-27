@@ -1,0 +1,41 @@
+{
+  "validation_results": {
+    "passed": [],
+    "failed": [
+      "Failed to load sensor data: [Errno 2] No such file or directory: '/home/workspace/WDW-Automated-Monorail-System/sensor_system/system_wide_sensor_framework.json'"
+    ],
+    "warnings": []
+  },
+  "requirements": {
+    "monorails": {
+      "min_count": 9,
+      "min_sensors_per_monorail": 2,
+      "total_min_sensors": 18
+    },
+    "stations": {
+      "resort_hotels": {
+        "min_count": 3,
+        "min_sensors": 6
+      },
+      "epcot": {
+        "min_count": 1,
+        "min_sensors": 3
+      },
+      "ttc": {
+        "min_count": 1,
+        "min_sensors": 6
+      }
+    },
+    "maintenance": {
+      "min_sensors": 2
+    },
+    "barn": {
+      "min_sensors": 4
+    },
+    "total": {
+      "min_sensors": 36,
+      "max_sensors": 50
+    }
+  },
+  "timestamp": "N/A"
+}
