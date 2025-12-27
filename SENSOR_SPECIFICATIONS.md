@@ -1,6 +1,7 @@
 # WDW Monorail System - Sensor Specifications
 
-## Overview
+---
+
 This document outlines the specific sensor models and specifications for the hybrid WiFi/Bluetooth mesh network architecture supporting the WDW Automated Monorail System.
 
 ## Track Layer Sensors (WiFi-Enabled)
@@ -193,5 +194,6 @@ This document outlines the specific sensor models and specifications for the hyb
 - BLE range can be extended significantly with mesh topology
 - WiFi mesh provides stability; BLE provides real-time location data
 - Total estimated cost per basic setup: $400-600
+
 
 

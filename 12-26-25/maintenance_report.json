@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-26T07:02:45.563905",
+  "success": true,
+  "tasks": [
+    {
+      "name": "Git Status Check",
+      "status": "warning",
+      "message": "Local changes detected",
+      "details": "?? maintenance.log"
+    },
+    {
+      "name": "Dependency Checks",
+      "status": "success",
+      "message": "Dependabot configured and active",
+      "dependencies_checked": 56
+    },
+    {
+      "name": "Test Execution",
+      "status": "error",
+      "message": "Some tests failed",
+      "output": "wdw_sensors (unittest.loader._FailedTest.wdw_sensors) ... ERROR\n\n======================================================================\nERROR: wdw_sensors (unittest.loader._FailedTest.wdw_sensors)\n----------------------------------------------------------------------\nImportError: Failed to import test module: wdw_sensors\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/unittest/loader.py\", line 427, in _find_test_path\n    package = self._get_module_from_name(name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/unittest/loader.py\", line 337, in _get_module_from_name\n    __import__(name)\n  File \"/home/workspace/WDW-Automated-Monorail-System/wdw_sensors/__init__.py\", line 4, in <module>\n    from .dht22 import DHT22\n  File \"/home/workspace/WDW-Automated-Monorail-System/wdw_sensors/dht22.py\", line 1, in <module>\n    import Adafruit_DHT\nModuleNotFoundError: No module named 'Adafruit_DHT'\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)\n"
+    },
+    {
+      "name": "Security Scan",
+      "status": "warning",
+      "message": "Security issues detected",
+      "issues": [
+        "Missing security files: .gitignore, README.md"
+      ]
+    }
+  ],
+  "errors": []
+}

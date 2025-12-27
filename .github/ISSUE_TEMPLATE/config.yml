@@ -1,0 +1,8 @@
+blank: .github/ISSUE_TEMPLATE/blank.yml
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/lukew2580/WDW-Automated-Monorail-System/discussions
+    about: Please ask and answer questions here.
+  - name: Zo Computer Support
+    url: https://support.zocomputer.com
+    about: Contact Zo Computer support for technical issues.
