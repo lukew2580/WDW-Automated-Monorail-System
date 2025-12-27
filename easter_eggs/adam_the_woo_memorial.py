@@ -7,11 +7,36 @@ This script is a tribute to Adam the Woo, a beloved figure in the Disney communi
 
 import random
 import time
+import json
+
+def load_voice_database():
+    """
+    Load the vocal tones and characteristics from the JSON database.
+    """
+    with open('/home/workspace/WDW-Automated-Monorail-System/easter_eggs/adam_the_woo_voice_database.json', 'r') as file:
+        return json.load(file)
+
+def simulate_vocal_tone(tone_description, message):
+    """
+    Simulate the vocal tone by adding emphasis or styling to the message.
+    """
+    if "enthusiastic" in tone_description:
+        return f"🎢 {message.upper()}! 🎢"
+    elif "calm" in tone_description:
+        return f"🌟 {message}... 🌟"
+    elif "energetic" in tone_description:
+        return f"🚀 {message}!!! 🚀"
+    elif "thoughtful" in tone_description:
+        return f"📜 {message}... 📜"
+    else:
+        return message
 
 def adam_the_woo_memorial():
     """
-    Display a memorial message for Adam the Woo.
+    Display a memorial message for Adam the Woo with simulated vocal tones.
     """
+    voice_db = load_voice_database()
+    
     messages = [
         "In loving memory of Adam the Woo. Your passion for Disney will always inspire us.",
         "Adam the Woo, you brought magic to our lives. Rest in peace.",
@@ -26,7 +51,9 @@ def adam_the_woo_memorial():
     
     for _ in range(5):
         message = random.choice(messages)
-        print(f"🌟 {message} 🌟")
+        tone = random.choice(voice_db["vocal_tones"])
+        styled_message = simulate_vocal_tone(tone["description"], message)
+        print(f"🌟 {styled_message} 🌟")
         time.sleep(2)
     
     print("\n" + "="*80)
@@ -35,4 +62,5 @@ def adam_the_woo_memorial():
 
 if __name__ == "__main__":
     adam_the_woo_memorial()
+
 
