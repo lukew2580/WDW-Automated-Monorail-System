@@ -62,7 +62,7 @@ paho-mqtt==2.1.0
 
 # Security and cryptography
 bcrypt==4.2.1
-cryptography==44.0.1
+cryptography==46.0.3
 pyjwt==2.10.1
 pynacl==1.6.1
 pyopenssl==25.3.0
