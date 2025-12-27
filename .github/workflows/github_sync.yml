@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 */6 * * *'  # Run every 6 hours instead of hourly to reduce noise
+    - cron: '0 0 * * *'  # Run daily at midnight
 
 jobs:
   sync:
@@ -58,4 +58,5 @@ jobs:
               Check the [workflow run logs](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.`,
               labels: ['bug', 'automated']
             });
-            console.log(`Created issue: ${issue.html_url}`);
+            console.log(`Created issue: ${issue.data.html_url}`);
+
