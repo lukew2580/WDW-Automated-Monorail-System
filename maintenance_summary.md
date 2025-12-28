@@ -1,6 +1,6 @@
 # WDW Monorail Maintenance Report
 
-**Generated:** 2025-12-26 07:02:45
+**Generated:** 2025-12-28 07:07:29
 
 **Status:** ✅ Success
 
@@ -12,7 +12,7 @@
 
 **Message:** Local changes detected
 
-**Details:** ?? maintenance.log
+**Details:** M maintenance.log
 
 ---
 
@@ -22,7 +22,7 @@
 
 **Message:** Dependabot configured and active
 
-**Dependencies Checked:** 56
+**Dependencies Checked:** 49
 
 ---
 
@@ -65,7 +65,7 @@ FAILED (errors=1)
 
 **Message:** Security issues detected
 
-**Issues:** ['Missing security files: .gitignore, README.md']
+**Issues:** ['Missing security files: README.md']
 
 ---
 
