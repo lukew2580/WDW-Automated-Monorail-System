@@ -1,6 +1,6 @@
 # WDW Monorail Maintenance Report
 
-**Generated:** 2025-12-28 07:07:29
+**Generated:** 2025-12-29 10:02:52
 
 **Status:** ✅ Success
 
@@ -12,7 +12,10 @@
 
 **Message:** Local changes detected
 
-**Details:** M maintenance.log
+**Details:** M github_sync.log
+ M maintenance.log
+ M maintenance_report.json
+ M maintenance_summary.md
 
 ---
 
