@@ -49,7 +49,7 @@ python-socketio==5.16.0
 # CVE-2024-22818: DoS via Tudoor mechanism in eventlet and dnspython  
 # CVE-2023-41419: gevent privilege escalation (fixed in 23.9.0+)
 eventlet==0.40.4
-gevent==24.11.1
+gevent==25.9.1
 gevent-websocket==0.10.1
 
 # Async and networking
