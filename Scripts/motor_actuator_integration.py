@@ -8,7 +8,7 @@ import asyncio
 import logging
 from typing import Dict, List, Optional
 from dataclasses import dataclass
-from bluetooth_mesh import MonorailMeshNode, MonorailStatus
+from bluetooth_mesh import MonorailMeshNode, MonorailStatus, MonorailMeshNetwork
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)sZ %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -74,50 +74,50 @@ class MotorActuatorController:
 
 
 class MeshNetworkMotorActuatorIntegration:
-    """Integrates motors and actuators with the mesh network"""
+    """Integrates motor and actuator control with mesh network"""
     
-    def __init__(self, motor_actuator_controller: MotorActuatorController):
-        self.motor_actuator_controller = motor_actuator_controller
-        self.mesh_nodes: Dict[str, MonorailMeshNode] = {}
+    def __init__(self, motor_controller: MotorActuatorController, mesh_network: MonorailMeshNetwork):
+        self.motor_controller = motor_controller
+        self.mesh_network = mesh_network
+        self.motor_mesh_mapping: Dict[str, str] = {}  # motor_id -> mesh_node_id
+        self.actuator_mesh_mapping: Dict[str, str] = {}  # actuator_id -> mesh_node_id
         
-    def add_mesh_node(self, mesh_node: MonorailMeshNode):
-        """Add a mesh node to the integration"""
-        self.mesh_nodes[mesh_node.monorail_id] = mesh_node
-        logger.info(f"Added mesh node {mesh_node.monorail_id} to integration")
+    def add_motor_to_mesh(self, motor_id: str, mesh_node_id: str):
+        """Map a motor to a mesh node"""
+        self.motor_mesh_mapping[motor_id] = mesh_node_id
+        logger.info(f"Mapped motor {motor_id} to mesh node {mesh_node_id}")
+        
+    def add_actuator_to_mesh(self, actuator_id: str, mesh_node_id: str):
+        """Map an actuator to a mesh node"""
+        self.actuator_mesh_mapping[actuator_id] = mesh_node_id
+        logger.info(f"Mapped actuator {actuator_id} to mesh node {mesh_node_id}")
         
     async def sync_motor_actuator_status(self, motor_id: str, actuator_id: str, mesh_node_id: str):
-        """Sync the status of a motor and actuator with the mesh network"""
-        if not self.motor_actuator_controller.check_compatibility(motor_id, actuator_id):
+        """Synchronize motor and actuator status with mesh network"""
+        # Check if motor and actuator are compatible
+        if not self.motor_controller.check_compatibility(motor_id, actuator_id):
             logger.error(f"Motor {motor_id} and actuator {actuator_id} are not compatible")
-            return False
-            
-        mesh_node = self.mesh_nodes.get(mesh_node_id)
-        if not mesh_node:
-            logger.error(f"Mesh node {mesh_node_id} not found")
-            return False
-            
-        # Simulate syncing status
-        motor_spec = self.motor_actuator_controller.motors.get(motor_id)
-        actuator_spec = self.motor_actuator_controller.actuators.get(actuator_id)
+            return
         
-        if motor_spec and actuator_spec:
-            status = MonorailStatus(
-                monorail_id=mesh_node_id,
-                position=mesh_node.position,
-                speed=mesh_node.speed,
-                is_moving=mesh_node.is_moving,
-                battery_percent=mesh_node.battery_percent,
-                timestamp=mesh_node.last_update,
-                next_station=mesh_node.next_station,
-                can_proceed=mesh_node.can_proceed
-            )
-            
-            # Update mesh node status
-            await mesh_node.receive_status(status)
-            logger.info(f"Synced motor {motor_id} and actuator {actuator_id} status with mesh node {mesh_node_id}")
-            return True
-            
-        return False
+        # Add motor and actuator to mesh network
+        self.add_motor_to_mesh(motor_id, mesh_node_id)
+        self.add_actuator_to_mesh(actuator_id, mesh_node_id)
+        
+        # Log synchronization
+        logger.info(f"Synchronized {motor_id} and {actuator_id} status with mesh node {mesh_node_id}")
+        
+        # Broadcast status to mesh network
+        if mesh_node_id in self.mesh_network.nodes:
+            node = self.mesh_network.nodes[mesh_node_id]
+            await node.broadcast_status(list(self.mesh_network.nodes.values()))
+        
+    async def check_collision_risk(self, monorail_id: str, next_position: float) -> bool:
+        """Check if monorail moving to next_position would collide"""
+        return await self.mesh_network.check_collision_risk(monorail_id, next_position)
+        
+    async def handle_switch_passage(self, monorail_id: str, switch_id: str, incoming_route: str) -> bool:
+        """Coordinate monorail passage through switch"""
+        return await self.mesh_network.handle_switch_passage(monorail_id, switch_id, incoming_route)
 
 
 async def main():
@@ -206,4 +206,8 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+
+
+
 

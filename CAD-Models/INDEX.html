@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDW Monorail Barn - CAD Files</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .file-card {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .file-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+            transform: translateY(-4px);
+        }
+        .file-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .file-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            word-break: break-word;
+        }
+        .file-type {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 12px;
+        }
+        .file-size {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 12px;
+        }
+        .file-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .file-action {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .file-action:hover {
+            background: #5568d3;
+        }
+        .image-preview {
+            width: 100%;
+            height: 200px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .stats {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .header-section {
+            margin-bottom: 30px;
+        }
+        .file-path {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            color: #333;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>🏗️ WDW Monorail Barn</h1>
+            <p class="subtitle">CAD Model Files - Ready to View & Use</p>
+            <div class="file-path">📂 /WDW-Automated-Monorail-System/CAD-Models/</div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">6</div>
+                <div class="stat-label">CAD Files</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">7.3 MB</div>
+                <div class="stat-label">Total Size</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">31</div>
+                <div class="stat-label">Components</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">17</div>
+                <div class="stat-label">Sensors</div>
+            </div>
+        </div>
+
+        <div class="files-grid">
+            <!-- BLEND File -->
+            <div class="file-card">
+                <div class="file-icon">⚙️</div>
+                <div class="file-name">enhanced_barn_model.blend</div>
+                <div class="file-type">BLENDER</div>
+                <div class="file-size">2.7 MB</div>
+                <div class="file-description">Full Blender project. Edit in Blender, see all materials, lights, and geometry.</div>
+                <button class="file-action">✓ Best for Editing</button>
+            </div>
+
+            <!-- GLB File -->
+            <div class="file-card">
+                <div class="file-icon">🌐</div>
+                <div class="file-name">enhanced_barn_model.glb</div>
+                <div class="file-type">GLTF/GLB</div>
+                <div class="file-size">1.3 MB</div>
+                <div class="file-description">Web-optimized 3D model. Instant preview in any 3D viewer or web app.</div>
+                <button class="file-action">✓ Instant Preview</button>
+            </div>
+
+            <!-- OBJ File -->
+            <div class="file-card">
+                <div class="file-icon">📦</div>
+                <div class="file-name">enhanced_barn_model.obj</div>
+                <div class="file-type">OBJ</div>
+                <div class="file-size">1.4 MB</div>
+                <div class="file-description">Universal 3D format. Works with most CAD and 3D software. Use with .mtl file.</div>
+                <button class="file-action">✓ Universal Format</button>
+            </div>
+
+            <!-- STL File -->
+            <div class="file-card">
+                <div class="file-icon">🖨️</div>
+                <div class="file-name">enhanced_barn_model.stl</div>
+                <div class="file-type">STL</div>
+                <div class="file-size">904 KB</div>
+                <div class="file-description">3D printing format. Solid geometry ready for 3D printer or slicing software.</div>
+                <button class="file-action">✓ 3D Print Ready</button>
+            </div>
+
+            <!-- MTL File -->
+            <div class="file-card">
+                <div class="file-icon">🎨</div>
+                <div class="file-name">enhanced_barn_model.mtl</div>
+                <div class="file-type">MATERIALS</div>
+                <div class="file-size">2.3 KB</div>
+                <div class="file-description">Materials definition for OBJ file. Contains colors and properties.</div>
+                <button class="file-action">✓ Materials Data</button>
+            </div>
+
+            <!-- PNG Render -->
+            <div class="file-card">
+                <div class="image-preview">
+                    <img src="enhanced_barn_model.png" alt="Barn Render" onerror="this.style.display='none'">
+                </div>
+                <div class="file-icon">🖼️</div>
+                <div class="file-name">enhanced_barn_model.png</div>
+                <div class="file-type">IMAGE</div>
+                <div class="file-size">1.0 MB</div>
+                <div class="file-description">High-resolution render. Perfect for presentations and documentation.</div>
+                <button class="file-action">✓ View Now</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #e0e0e0;">
+            <h3 style="color: #333; margin-bottom: 15px;">📝 How to Use These Files</h3>
+            <ul style="color: #666; line-height: 1.8; margin-left: 20px;">
+                <li><strong>View 3D Model:</strong> Open .glb file in any 3D viewer or open .blend in Blender</li>
+                <li><strong>Share with Team:</strong> Send .obj + .mtl files (universal compatibility)</li>
+                <li><strong>3D Print:</strong> Use .stl file with your 3D printer slicing software</li>
+                <li><strong>Edit/Customize:</strong> Open .blend file in Blender for full editing</li>
+                <li><strong>Presentations:</strong> Use .png image for documents and slides</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center; color: #999; font-size: 0.9em;">
+            <p>Generated: December 28, 2025 | Status: ✅ Ready to Use</p>
+        </div>
+    </div>
+</body>
+</html>

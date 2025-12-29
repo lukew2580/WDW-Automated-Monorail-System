@@ -1,7 +1,7 @@
 {
   "validation_results": {
     "passed": [
-      "\u2705 barn: Main barn structure with 6 beams and 12 parking slots (2486.7 KB)",
+      "\u2705 barn: Main barn structure with 6 beams and 12 parking slots (2841.9 KB)",
       "\u2705 barn_render: Rendered image of barn model (1010.8 KB)"
     ],
     "failed": [],
@@ -19,7 +19,7 @@
     "total_files": 7,
     "existing_files": 2,
     "missing_files": 5,
-    "total_size": 3581388
+    "total_size": 3945148
   },
   "completion_percentage": 28.57142857142857,
   "timestamp": "2025-12-22"

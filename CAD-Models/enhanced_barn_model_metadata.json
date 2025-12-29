@@ -1,0 +1,638 @@
+{
+  "name": "Enhanced Monorail Barn",
+  "version": "2.0",
+  "created": "2025-12-28T19:02:10.729542",
+  "components": [
+    {
+      "name": "Floor",
+      "type": "structural",
+      "dimensions": [
+        70,
+        50,
+        0.4
+      ],
+      "location": [
+        0,
+        0,
+        -0.1
+      ]
+    },
+    {
+      "name": "Support_Beam_-14_-8",
+      "type": "beam",
+      "dimensions": [
+        2,
+        2,
+        16
+      ],
+      "location": [
+        -14,
+        -8,
+        4.0
+      ]
+    },
+    {
+      "name": "Support_Beam_-14_8",
+      "type": "beam",
+      "dimensions": [
+        2,
+        2,
+        16
+      ],
+      "location": [
+        -14,
+        8,
+        4.0
+      ]
+    },
+    {
+      "name": "Support_Beam_0_-8",
+      "type": "beam",
+      "dimensions": [
+        2,
+        2,
+        16
+      ],
+      "location": [
+        0,
+        -8,
+        4.0
+      ]
+    },
+    {
+      "name": "Support_Beam_0_8",
+      "type": "beam",
+      "dimensions": [
+        2,
+        2,
+        16
+      ],
+      "location": [
+        0,
+        8,
+        4.0
+      ]
+    },
+    {
+      "name": "Support_Beam_14_-8",
+      "type": "beam",
+      "dimensions": [
+        2,
+        2,
+        16
+      ],
+      "location": [
+        14,
+        -8,
+        4.0
+      ]
+    },
+    {
+      "name": "Support_Beam_14_8",
+      "type": "beam",
+      "dimensions": [
+        2,
+        2,
+        16
+      ],
+      "location": [
+        14,
+        8,
+        4.0
+      ]
+    },
+    {
+      "name": "Roof_Beam",
+      "type": "structural",
+      "dimensions": [
+        70,
+        50,
+        1
+      ],
+      "location": [
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "name": "Roof",
+      "type": "roofing",
+      "dimensions": [
+        71,
+        51,
+        0.6
+      ],
+      "location": [
+        0,
+        0,
+        8.4
+      ]
+    },
+    {
+      "name": "Walls",
+      "type": "structural",
+      "count": 4,
+      "dimensions": [
+        35.5,
+        25.5,
+        8
+      ]
+    },
+    {
+      "name": "Parking_Slot_0_0",
+      "type": "parking",
+      "slot_number": 1,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -18,
+        -15,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_0_1",
+      "type": "parking",
+      "slot_number": 2,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -18,
+        -5,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_0_2",
+      "type": "parking",
+      "slot_number": 3,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -18,
+        5,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_0_3",
+      "type": "parking",
+      "slot_number": 4,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -18,
+        15,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_1_0",
+      "type": "parking",
+      "slot_number": 5,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -6,
+        -15,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_1_1",
+      "type": "parking",
+      "slot_number": 6,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -6,
+        -5,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_1_2",
+      "type": "parking",
+      "slot_number": 7,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -6,
+        5,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_1_3",
+      "type": "parking",
+      "slot_number": 8,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        -6,
+        15,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_2_0",
+      "type": "parking",
+      "slot_number": 9,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        6,
+        -15,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_2_1",
+      "type": "parking",
+      "slot_number": 10,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        6,
+        -5,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_2_2",
+      "type": "parking",
+      "slot_number": 11,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        6,
+        5,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Parking_Slot_2_3",
+      "type": "parking",
+      "slot_number": 12,
+      "dimensions": [
+        10,
+        16,
+        0.2
+      ],
+      "location": [
+        6,
+        15,
+        0.1
+      ],
+      "capacity": 1
+    },
+    {
+      "name": "Maintenance_Bay_1",
+      "type": "maintenance",
+      "dimensions": [
+        12,
+        24,
+        0.3
+      ],
+      "location": [
+        -28,
+        -20,
+        0.15
+      ],
+      "equipment": [
+        "vehicle lift",
+        "diagnostic station",
+        "hydraulics"
+      ]
+    },
+    {
+      "name": "Maintenance_Bay_2",
+      "type": "maintenance",
+      "dimensions": [
+        12,
+        24,
+        0.3
+      ],
+      "location": [
+        -28,
+        0,
+        0.15
+      ],
+      "equipment": [
+        "vehicle lift",
+        "diagnostic station",
+        "hydraulics"
+      ]
+    },
+    {
+      "name": "Maintenance_Bay_3",
+      "type": "maintenance",
+      "dimensions": [
+        12,
+        24,
+        0.3
+      ],
+      "location": [
+        -28,
+        20,
+        0.15
+      ],
+      "equipment": [
+        "vehicle lift",
+        "diagnostic station",
+        "hydraulics"
+      ]
+    },
+    {
+      "name": "Maintenance_Bay_4",
+      "type": "maintenance",
+      "dimensions": [
+        12,
+        24,
+        0.3
+      ],
+      "location": [
+        -8,
+        -20,
+        0.15
+      ],
+      "equipment": [
+        "vehicle lift",
+        "diagnostic station",
+        "hydraulics"
+      ]
+    },
+    {
+      "name": "Consolidation_Zone",
+      "type": "operational",
+      "dimensions": [
+        16,
+        20,
+        0.4
+      ],
+      "location": [
+        15,
+        0,
+        0.2
+      ],
+      "purpose": "Vehicle consolidation and load balancing"
+    },
+    {
+      "name": "Communication_Hub",
+      "type": "infrastructure",
+      "dimensions": [
+        3,
+        3,
+        3
+      ],
+      "location": [
+        20,
+        0,
+        1.5
+      ],
+      "capabilities": [
+        "WiFi 6E",
+        "Bluetooth 5.3",
+        "Mesh networking",
+        "4G backup"
+      ]
+    },
+    {
+      "name": "HVAC_System",
+      "type": "infrastructure",
+      "units": 6,
+      "coverage": "full barn"
+    },
+    {
+      "name": "Lighting_System",
+      "type": "infrastructure",
+      "units": 9,
+      "type_led": "Full spectrum LED",
+      "color_temperature": "5000K"
+    },
+    {
+      "name": "Power_Distribution",
+      "type": "infrastructure",
+      "capacity": "480V, 3-phase",
+      "charging_stations": 4,
+      "backup_generator": "500kW diesel"
+    }
+  ],
+  "sensors": [
+    {
+      "name": "Entry_Gate_Sensor",
+      "type": "access",
+      "location": [
+        -34,
+        0,
+        5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Exit_Gate_Sensor",
+      "type": "access",
+      "location": [
+        34,
+        0,
+        5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Front_Monitor",
+      "type": "access",
+      "location": [
+        0,
+        -12,
+        5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Rear_Monitor",
+      "type": "access",
+      "location": [
+        0,
+        12,
+        5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Hub_Security_Sensor",
+      "type": "access",
+      "location": [
+        20,
+        0,
+        3
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_0_0",
+      "type": "occupancy",
+      "location": [
+        -18,
+        -15,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_0_1",
+      "type": "occupancy",
+      "location": [
+        -18,
+        -5,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_0_2",
+      "type": "occupancy",
+      "location": [
+        -18,
+        5,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_0_3",
+      "type": "occupancy",
+      "location": [
+        -18,
+        15,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_1_0",
+      "type": "occupancy",
+      "location": [
+        -6,
+        -15,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_1_1",
+      "type": "occupancy",
+      "location": [
+        -6,
+        -5,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_1_2",
+      "type": "occupancy",
+      "location": [
+        -6,
+        5,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_1_3",
+      "type": "occupancy",
+      "location": [
+        -6,
+        15,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_2_0",
+      "type": "occupancy",
+      "location": [
+        6,
+        -15,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_2_1",
+      "type": "occupancy",
+      "location": [
+        6,
+        -5,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_2_2",
+      "type": "occupancy",
+      "location": [
+        6,
+        5,
+        1.5
+      ],
+      "range": 50
+    },
+    {
+      "name": "Parking_Sensor_2_3",
+      "type": "occupancy",
+      "location": [
+        6,
+        15,
+        1.5
+      ],
+      "range": 50
+    }
+  ]
+}
