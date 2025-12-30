@@ -1,0 +1,65 @@
+# Sensor Mesh Network Topology - WDW Monorail System
+
+# Network Layers
+layers {
+  layer Audio {
+    label: "Audio Distribution Layer"
+    Sonos: { label: "Sonos Speakers" }
+    Shelly: { label: "Shelly WiFi" }
+    IKEA: { label: "IKEA DIRIGERA" }
+    Hue: { label: "Philips Hue" }
+  }
+  
+  layer Coordination {
+    label: "Central Coordination"
+    Audio_Service: { label: "Audio\nService"; shape: rectangle }
+    Sensor_Service: { label: "Sensor\nService"; shape: rectangle }
+    Monorail_Service: { label: "Monorail\nService"; shape: rectangle }
+    Automation: { label: "Automation\nEngine"; shape: rectangle }
+    MQTT: { label: "MQTT Broker"; shape: cylinder }
+  }
+  
+  layer Network {
+    label: "Network & Tracking"
+    TTC_Sensors: { label: "TTC Track\nWiFi Sensors" }
+    Resort_Sensors: { label: "Resort Loop\nWiFi Sensors" }
+    Epcot_Sensors: { label: "Epcot\nWiFi Sensors" }
+    Monorail_1: { label: "Monorail\nBLE #1"; shape: hexagon }
+    Monorail_2: { label: "Monorail\nBLE #2"; shape: hexagon }
+    BLE_Repeater: { label: "BLE Repeater"; shape: diamond }
+  }
+}
+
+Infrastructure: {
+  label: "Backend Infrastructure"
+  Raspberry_Pi: { label: "Pi 4 Server\nRack"; shape: rectangle }
+  InfluxDB: { label: "InfluxDB TSDB"; shape: cylinder }
+  Grafana: { label: "Grafana\nDashboard"; shape: rectangle }
+}
+
+# Connections
+Sonos -> Audio_Service
+Shelly -> Audio_Service
+IKEA -> Audio_Service
+Hue -> Audio_Service
+
+Audio_Service -> MQTT
+Sensor_Service -> MQTT
+Monorail_Service -> MQTT
+Automation -> MQTT
+
+TTC_Sensors -> Sensor_Service
+Resort_Sensors -> Sensor_Service
+Epcot_Sensors -> Sensor_Service
+
+Monorail_1 -> BLE_Repeater -> Monorail_Service
+Monorail_2 -> BLE_Repeater -> Monorail_Service
+
+MQTT -> InfluxDB
+MQTT -> PostgreSQL -> Grafana
+InfluxDB -> Grafana
+
+Raspberry_Pi -> Audio_Service
+Raspberry_Pi -> Sensor_Service
+Raspberry_Pi -> Monorail_Service
+Raspberry_Pi -> Automation
