@@ -1,3 +1,19 @@
 # Ignore Alpine Linux container files
 alpine_mcp/
 
+
+# === CAD Migration (CadQuery) ===
+# CAD Binary Files (use CadQuery .py files instead)
+*.blend
+*.blend1
+*.glb
+*.obj
+*.mtl
+*.stl
+
+# Backup directories
+.cad_backup/
+
+# Generated files
+*.step
+*.stp
