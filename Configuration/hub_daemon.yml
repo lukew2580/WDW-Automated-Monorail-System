@@ -1,0 +1,25 @@
+# WDW Automated Monorail System - Hub Daemon Configuration
+# Target: Raspberry Pi 5 hub daemon (track state, sensor polling, command dispatch).
+#
+# v1 COMMS POLICY: all mobile monorail units (trains) and mainline track
+# segments communicate over Bluetooth ONLY. Do NOT enable WiFi for trains or
+# mainline track nodes.
+
+comms:
+  # Bluetooth is the primary and, for v1, the only radio used for
+  # trains + mainline track segments.
+  bluetooth_enabled: true
+
+  # --- Reserved for v1.1 (NOT yet implemented) ---
+  # barn_wifi_enabled gates an optional WiFi radio mode scoped ONLY to the
+  # monorail barn's fixed sensor/motor nodes. The barn is a large fixed
+  # installation with many track switches, motors, and sensors spread over a
+  # wide area, where Bluetooth range and pairing-count limits do not scale.
+  #
+  # Scope when implemented: barn FIXED infrastructure nodes only.
+  # Mainline trains and track segments always remain Bluetooth-only.
+  #
+  # Keep this false until the v1.1 WiFi path is actually built. See
+  # Documentation/System_Architecture_Refinement.md ->
+  # "v1.1 Roadmap: Dual-Radio Communications".
+  barn_wifi_enabled: false
