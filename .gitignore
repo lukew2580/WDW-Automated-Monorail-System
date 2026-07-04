@@ -57,3 +57,21 @@ maintenance_report.json
 Thumbs.db
 .idea/
 .vscode/
+
+# === Additional generated reports / audits ===
+pip_audit.txt
+pytest_report.txt
+safety_report.txt
+outdated_deps.txt
+maintenance_summary.md
+*_report.txt
+*_report.json
+
+# === Adam the Woo tribute (LOCAL-ONLY, pending Jim Williams' written consent) ===
+# Do not commit tribute content publicly until consent is confirmed.
+easter_eggs/
+EasterEggs/
+adam_the_woo_memorial.py
+adam_the_woo_voice_database.json
+legacy_tribute_local.py
+cookies.txt
