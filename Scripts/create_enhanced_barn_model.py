@@ -269,25 +269,23 @@ class MonorailBarnGenerator:
         hub_mat = self.create_material("Hub_Metal", (0.25, 0.25, 0.3), roughness=0.2, metallic=1.0)
         hub.data.materials.append(hub_mat)
         
-        # Antenna array
-        for angle in range(0, 360, 45):
-            import math
-            rad = math.radians(angle)
-            bpy.ops.mesh.primitive_cylinder_add(
-                radius=0.1, 
-                depth=2,
-                location=(20 + 1.8 * math.cos(rad), 0 + 1.8 * math.sin(rad), 3)
-            )
-            antenna = bpy.context.active_object
-            antenna.name = f"Antenna_{angle}"
-            antenna.data.materials.append(hub_mat)
+        # Bluetooth LE chip antenna (single element; replaces the former
+        # WiFi omnidirectional dipole array - Bluetooth-only hardware)
+        bpy.ops.mesh.primitive_cylinder_add(
+            radius=0.05,
+            depth=1,
+            location=(20, 0, 3)
+        )
+        antenna = bpy.context.active_object
+        antenna.name = "Bluetooth_LE_Antenna"
+        antenna.data.materials.append(hub_mat)
         
         self.barn_data["components"].append({
             "name": "Communication_Hub",
             "type": "infrastructure",
             "dimensions": (3, 3, 3),
             "location": (20, 0, 1.5),
-            "capabilities": ["WiFi 6E", "Bluetooth 5.3", "Mesh networking", "4G backup"]
+            "capabilities": ["Bluetooth 5.3", "Bluetooth mesh networking", "4G backup"]
         })
         
         return hub
@@ -504,5 +502,3 @@ if __name__ == "__main__":
     output_path = "/home/workspace/WDW-Automated-Monorail-System/CAD-Models/enhanced_barn_model.blend"
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     generator.generate_full_barn(output_path)
-
-

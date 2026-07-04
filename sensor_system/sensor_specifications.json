@@ -100,7 +100,7 @@
       "type": "Bluetooth 5.1 mesh",
       "range": "0.5m - 50m",
       "frequency": "20Hz",
-      "location": "Wireless beacon",
+      "location": "BLE beacon",
       "purpose": "Monorail-to-monorail communication",
       "data_fields": [
         "adjacent_monorail_ids",

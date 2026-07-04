@@ -163,3 +163,18 @@ GET  /safety/status    - Collision avoidance status
 **Last Updated**: 2025-12-15  
 **API Server**: Running on port 8002
 
+
+## Networking (Bluetooth-only build)
+
+The hub daemon dashboard is a local HTTP server bound to the loopback interface
+(`127.0.0.1:8002`). It does **not** depend on WiFi, and the HTTP endpoint is never
+exposed on the network. Reach it by opening a shell on the Pi and browsing to
+`http://localhost:8002`:
+
+- directly on the Pi: open `http://localhost:8002`
+- remotely over a wired **Ethernet/LAN** link: SSH into the Pi, then use `localhost:8002`
+- remotely with no wired link: SSH over a **Bluetooth PAN (bnep)** tether, then use `localhost:8002`
+
+For remote access in a Bluetooth-only build, use a wired Ethernet/LAN connection or a
+Bluetooth PAN (bnep) tether; only the SSH connection traverses that link, not the raw
+HTTP endpoint.
