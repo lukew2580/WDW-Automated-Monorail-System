@@ -436,9 +436,8 @@
         1.5
       ],
       "capabilities": [
-        "WiFi 6E",
         "Bluetooth 5.3",
-        "Mesh networking",
+        "Bluetooth mesh networking",
         "4G backup"
       ]
     },
