@@ -17,3 +17,43 @@ alpine_mcp/
 # Generated files
 *.step
 *.stp
+
+# === Python build / test artifacts ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# === Coverage ===
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+
+# === Logs ===
+*.log
+
+# === Generated lint / security / validation reports ===
+bandit_report.txt
+flake8_report.txt
+mypy_report.txt
+cad_validation_report.json
+maintenance_report.json
+
+# === OS / editor cruft ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
