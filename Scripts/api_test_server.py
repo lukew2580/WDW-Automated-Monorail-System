@@ -72,8 +72,14 @@ class MonorailAPIHandler(BaseHTTPRequestHandler):
         pass  # Suppress logging
 
 if __name__ == "__main__":
-    # Dashboard/API served on loopback only (127.0.0.1); no WiFi dependency.
-    # Reach it via localhost, wired Ethernet/LAN, or a Bluetooth PAN link.
+    # Dashboard/API is served on the loopback interface only (127.0.0.1); no WiFi
+    # dependency. 127.0.0.1 is not reachable from other devices, so remote access
+    # means opening a shell on the Pi first and then hitting localhost:
+    #   - on the Pi itself:            http://localhost:8002
+    #   - remote over wired Ethernet/LAN: SSH into the Pi, then use localhost:8002
+    #   - remote with no wired link:      SSH over a Bluetooth PAN (bnep) tether, then localhost:8002
+    # Only the SSH connection traverses the Ethernet/LAN or Bluetooth PAN; the raw
+    # HTTP endpoint stays bound to loopback and is never exposed on the network.
     server = HTTPServer(("127.0.0.1", 8002), MonorailAPIHandler)
     print("✅ Test API server running on http://127.0.0.1:8002")
     server.serve_forever()
