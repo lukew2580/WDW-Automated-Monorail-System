@@ -123,3 +123,38 @@ A reserved flag `barn_wifi_enabled` (default `false`) gates this behavior and st
 - No actual WiFi networking / transport code.
 - No change to train or mainline track comms (Bluetooth-only is preserved).
 - No dashboard changes.
+
+---
+
+## v1.1 Roadmap: Bluetooth Dropout Tolerance (Hub Daemon Connection Handling)
+
+**Status:** Planned for v1.1. This is documentation and reserved config stubs only. No connection-handling / networking code is implemented yet. These fields are not wired into daemon logic.
+
+### Background: Bluetooth is the correct primary channel for moving trains
+Trains maintain a **live Bluetooth link while moving on track**. This is the primary and correct communication channel for mobile units, not a gap or a fallback. The Bluetooth-only comms policy for trains and mainline track segments (see the Dual-Radio section above) stands unchanged.
+
+### The problem: sporadic connectivity is expected, not a fault
+Bluetooth connectivity from a **moving** train is inherently sporadic. Hills, curves, structural obstructions, and simple distance from the hub radio can cause **brief dropouts even while the system is completely healthy and operating normally**. A single missed heartbeat or a short signal gap is a normal operating condition on a real track loop, not evidence of a failure.
+
+If the hub daemon treated every missed heartbeat as a fault, it would generate constant false alarms and could needlessly halt or re-initialize trains that are, in fact, running fine. The daemon must therefore be **tolerant** of brief interruptions.
+
+### v1.1 design: buffer, tolerate, then escalate
+The hub daemon's connection handling for train Bluetooth links will follow three principles:
+
+1. **Buffer / retain last known state.** During a dropout, the daemon retains the last known command and state for each affected train (last commanded speed, direction, block/segment occupancy, etc.) rather than discarding it. The train's operational context is preserved through the gap.
+
+2. **Tolerate brief gaps; only escalate a sustained dropout.** A single missed heartbeat or brief gap does **not** trigger a fault. The daemon only escalates to a real fault/alert when a dropout is **sustained past a defined tolerance threshold**, expressed either as N consecutive missed heartbeats or M seconds without contact (exact values configurable, see `Configuration/hub_daemon.yml`). Below that threshold the train is considered healthy-but-briefly-out-of-contact.
+
+3. **Resume from buffer on reconnect.** When the link is re-established within tolerance, the daemon resumes normal operation using the buffered command/state. A brief reconnect does **not** require a full re-initialization or re-handshake of the train; it simply picks the link back up.
+
+### Fault escalation threshold concept
+The tolerance threshold is the boundary between "expected sporadic gap" and "something is actually wrong" (train powered down, radio failure, train off the end of range, etc.). It is intentionally **tunable** so it can be calibrated against real track behavior:
+- `missed_heartbeat_fault_threshold`: number of consecutive missed heartbeats tolerated before flagging a real fault.
+- `fault_timeout_seconds`: an alternate/companion time-based threshold for the same purpose.
+
+These are reserved placeholder values for v1.1 and are **not yet consumed by any daemon logic**.
+
+### Out of scope for this documentation change
+- No actual connection-handling / heartbeat / buffering code.
+- No change to the Bluetooth-only comms policy for trains and mainline track.
+- No dashboard changes.

@@ -23,3 +23,25 @@ comms:
   # Documentation/System_Architecture_Refinement.md ->
   # "v1.1 Roadmap: Dual-Radio Communications".
   barn_wifi_enabled: false
+
+  # --- Bluetooth dropout tolerance (RESERVED for v1.1, NOT yet implemented) ---
+  # Trains keep a live Bluetooth link while moving; this is the correct primary
+  # channel, not a gap. But a moving train's Bluetooth is inherently sporadic:
+  # hills, curves, obstructions, and distance can cause brief dropouts even when
+  # the system is perfectly healthy. The hub daemon must NOT treat a single
+  # missed heartbeat or brief gap as a fault.
+  #
+  # These fields are placeholder/reserved values for v1.1 and are NOT yet wired
+  # into any daemon logic. See Documentation/System_Architecture_Refinement.md ->
+  # "v1.1 Roadmap: Bluetooth Dropout Tolerance (Hub Daemon Connection Handling)".
+  bluetooth:
+    dropout_tolerance:
+      # Retain each train's last known command/state during a dropout so a brief
+      # reconnect resumes from buffer instead of requiring a full re-init.
+      buffer_last_known_state: true
+      # Consecutive missed heartbeats tolerated before flagging a REAL fault.
+      # Tunable placeholder value; calibrate against real track behavior.
+      missed_heartbeat_fault_threshold: 5
+      # Alternate/companion time-based threshold (seconds without contact) before
+      # escalating to a real fault. Tunable placeholder value.
+      fault_timeout_seconds: 10
