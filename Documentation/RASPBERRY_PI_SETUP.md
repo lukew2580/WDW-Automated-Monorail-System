@@ -18,7 +18,7 @@ This guide provides comprehensive instructions for setting up the WDW Monorail S
 | GPIO Components | LEDs, buttons, sensors | Various |
 | LCD Display | 16x2 Character LCD with RGB backlight | 1 |
 | NeoPixel Strip | WS2812B LED strip (30 LEDs) | 1 |
-| Network | WiFi or Ethernet connection | 1 |
+| Network | Ethernet connection (wired; Bluetooth-only build) | 1 |
 
 ### **Software Requirements**
 
@@ -41,24 +41,17 @@ This guide provides comprehensive instructions for setting up the WDW Monorail S
 # - Write
 ```
 
-### **2. Enable SSH and WiFi (Headless Setup)**
+### **2. Enable SSH and Ethernet (Headless Setup)**
+
+This project is **Bluetooth-only** - the Pi does not use WiFi. Use a wired **Ethernet** connection for headless setup, SSH, and dashboard access.
 
 Before inserting the SD card:
 
 1. Create empty file named `ssh` in boot partition
-2. Create `wpa_supplicant.conf` in boot partition:
+2. Connect the Pi to your router/switch via **Ethernet (DHCP)** before first boot
+3. (Optional) Reserve a static DHCP lease for the Pi's MAC on your router for a stable dashboard address
 
-```conf
-country=US
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-
-network={
-    ssid="YourWiFiName"
-    psk="YourWiFiPassword"
-    key_mgmt=WPA-PSK
-}
-```
+> No `wpa_supplicant.conf` / WiFi credentials are required. Monorail Picos and BLE sensors pair over Bluetooth after boot with `bluetoothctl`.
 
 ### **3. Boot and Initial Configuration**
 
@@ -551,36 +544,18 @@ static ip_address=192.168.1.100/24
 static routers=192.168.1.1
 static domain_name_servers=192.168.1.1 8.8.8.8
 
-interface wlan0
-static ip_address=192.168.1.101/24
-static routers=192.168.1.1
-static domain_name_servers=192.168.1.1 8.8.8.8
 ```
 
-### **2. WiFi Configuration**
+### **2. Bluetooth Configuration**
+
+This build is Bluetooth-only; there is no WiFi to configure. Pair the monorail Picos and BLE sensors over Bluetooth:
 
 ```bash
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-```
-
-```conf
-country=US
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-
-network={
-    ssid="WDW-Monorail-Network"
-    psk="securepassword"
-    key_mgmt=WPA-PSK
-    priority=10
-}
-
-network={
-    ssid="Backup-Network"
-    psk="backupassword"
-    key_mgmt=WPA-PSK
-    priority=5
-}
+sudo bluetoothctl
+# scan on
+# pair <device-mac>
+# trust <device-mac>
+# connect <device-mac>
 ```
 
 ## 🔄 Backup & Recovery
