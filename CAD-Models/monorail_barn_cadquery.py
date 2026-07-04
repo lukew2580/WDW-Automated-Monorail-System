@@ -168,7 +168,7 @@ class MonorailBarn:
         return bays
     
     def create_communication_hub(self):
-        """Create central communication hub with antenna array."""
+        """Create central communication hub with Bluetooth LE antenna."""
         # Hub base
         hub = (
             cq.Workplane("XY")
@@ -176,14 +176,14 @@ class MonorailBarn:
             .translate((0, 0, 1.5))
         )
         
-        # Antenna mast
+        # Bluetooth antenna mast
         mast = (
             cq.Workplane("XY")
             .cylinder(6, 0.2)
             .translate((0, 0, 3 + 3))
         )
         
-        # Antennas
+        # Bluetooth LE antenna
         antenna1 = (
             cq.Workplane("XY")
             .cylinder(0.5, 0.05)
@@ -277,4 +277,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
