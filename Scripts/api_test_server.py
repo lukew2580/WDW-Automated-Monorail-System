@@ -72,7 +72,8 @@ class MonorailAPIHandler(BaseHTTPRequestHandler):
         pass  # Suppress logging
 
 if __name__ == "__main__":
+    # Dashboard/API served on loopback only (127.0.0.1); no WiFi dependency.
+    # Reach it via localhost, wired Ethernet/LAN, or a Bluetooth PAN link.
     server = HTTPServer(("127.0.0.1", 8002), MonorailAPIHandler)
     print("✅ Test API server running on http://127.0.0.1:8002")
     server.serve_forever()
-
