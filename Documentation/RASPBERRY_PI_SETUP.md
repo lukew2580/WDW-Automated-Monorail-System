@@ -551,11 +551,14 @@ static domain_name_servers=192.168.1.1 8.8.8.8
 This build is Bluetooth-only; there is no WiFi to configure. Pair the monorail Picos and BLE sensors over Bluetooth:
 
 ```bash
+# Launch the interactive Bluetooth console:
 sudo bluetoothctl
-# scan on
-# pair <device-mac>
-# trust <device-mac>
-# connect <device-mac>
+
+# Then run these at the interactive [bluetooth]# prompt (not the shell):
+[bluetooth]# scan on
+[bluetooth]# pair <device-mac>
+[bluetooth]# trust <device-mac>
+[bluetooth]# connect <device-mac>
 ```
 
 ## 🔄 Backup & Recovery
