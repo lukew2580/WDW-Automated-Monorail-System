@@ -71,7 +71,7 @@ paramiko==4.0.0
 
 # Data science and visualization
 numpy==2.4.3
-pandas==2.3.3
+pandas==3.0.3
 matplotlib==3.10.8
 scipy==1.17.1
 scikit-learn==1.8.0
