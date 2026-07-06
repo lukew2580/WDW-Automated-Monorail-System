@@ -83,6 +83,6 @@ pyyaml==6.0.3
 requests==2.33.0
 
 # DNS library - patched for CVE-2024-22818 (Tudoor DoS)
-dnspython>=2.7.0
+dnspython>=2.8.0
 
 
