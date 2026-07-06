@@ -40,7 +40,7 @@ flask-cors==6.0.2
 flask-socketio==5.6.1
 
 # Jinja2 - UPDATED to fix CVE-2024-22195 (XSS via xmlattr)
-Jinja2>=3.1.5
+Jinja2>=3.1.6
 
 # Socket.IO - UPDATED to fix CVE
 # CVE-2024-47174: RCE through malicious pickle deserialization
