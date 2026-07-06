@@ -67,7 +67,7 @@ cryptography==48.0.1
 pyjwt==2.12.1
 pynacl==1.6.2
 pyopenssl==25.3.0
-paramiko==4.0.0
+paramiko==5.0.0
 
 # Data science and visualization
 numpy==2.4.3
