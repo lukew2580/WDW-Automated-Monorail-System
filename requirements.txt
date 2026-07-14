@@ -24,7 +24,7 @@ adafruit-circuitpython-servokit==1.3.22
 # CVE-2024-27306: XSS on index pages (fixed in 3.9.4+)
 # CVE-2024-42367: Path traversal with compressed files (fixed in 3.10.2+)
 # CVE-2025-69223: Zip bomb vulnerability (fixed in 3.13.3+)
-aiohttp==3.13.3
+aiohttp==3.14.1
 aiohttp-cors==0.8.1
 aiohttp-jinja2==1.6
 aiohttp-session==2.12.1
@@ -44,7 +44,7 @@ Jinja2>=3.1.5
 
 # Socket.IO - UPDATED to fix CVE
 # CVE-2024-47174: RCE through malicious pickle deserialization
-python-socketio==5.16.1
+python-socketio==5.16.2
 
 # Eventlet/Gevent - UPDATED to fix CVEs
 # CVE-2024-22818: DoS via Tudoor mechanism in eventlet and dnspython  
@@ -64,10 +64,10 @@ paho-mqtt==2.1.0
 # Security and cryptography
 bcrypt==5.0.0
 cryptography==48.0.1
-pyjwt==2.12.1
+pyjwt==2.13.0
 pynacl==1.6.2
-pyopenssl==25.3.0
-paramiko==4.0.0
+pyopenssl==26.0.0
+paramiko==5.0.0
 
 # Data science and visualization
 numpy==2.4.3
