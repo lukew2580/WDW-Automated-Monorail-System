@@ -19,12 +19,19 @@ adafruit-circuitpython-servokit==1.3.22
 
 # AIOHTTP ecosystem - UPDATED to fix CVEs
 # CVE-2024-52304: DoS via malformed POST requests
-# CVE-2024-23334: XSS on static file handling index pages  
+# CVE-2024-23334: XSS on static file handling index pages
 # CVE-2024-23829: Request smuggling via chunk extensions
 # CVE-2024-27306: XSS on index pages (fixed in 3.9.4+)
 # CVE-2024-42367: Path traversal with compressed files (fixed in 3.10.2+)
 # CVE-2025-69223: Zip bomb vulnerability (fixed in 3.13.3+)
-aiohttp==3.13.3
+# CVE-2026-69244: Out-of-bounds heap read in C HTTP parser error path (fixed in 3.14.3+)
+# CVE-2026-123817: Excessive or unbounded memory/CPU use (fixed in 3.14.4+)
+# CVE-2026-111064: Server lacks initial request/header timeout (fixed in 3.14.4+)
+# CVE-2026-111066: File descriptor exhaustion in multipart requests (fixed in 3.14.4+)
+# CVE-2026-128131: Concatenated compressed streams cause excessive CPU use (fixed in 3.14.4+)
+# CVE-2026-128132: WebSocket receive queue limits bypassed by small/compressed messages (fixed in 3.14.4+)
+# CVE-2026-128128: WebSocket max_msg_size bypass via integer overflow (fixed in 3.14.4+)
+aiohttp==3.14.5
 aiohttp-cors==0.8.1
 aiohttp-jinja2==1.6
 aiohttp-session==2.12.1
@@ -47,7 +54,7 @@ Jinja2>=3.1.5
 python-socketio==5.16.1
 
 # Eventlet/Gevent - UPDATED to fix CVEs
-# CVE-2024-22818: DoS via Tudoor mechanism in eventlet and dnspython  
+# CVE-2024-22818: DoS via Tudoor mechanism in eventlet and dnspython
 # CVE-2023-41419: gevent privilege escalation (fixed in 23.9.0+)
 eventlet==0.40.4
 gevent==26.5.0
@@ -84,5 +91,3 @@ requests==2.33.0
 
 # DNS library - patched for CVE-2024-22818 (Tudoor DoS)
 dnspython>=2.7.0
-
-
